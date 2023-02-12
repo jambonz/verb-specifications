@@ -4,7 +4,9 @@
   "description": "Jambonz Verb Specification Utilities",
   "main": "index.js",
   "scripts": {
-    "test": "node test/"
+    "test": "node test/",
+    "jslint": "eslint index.js"
+
   },
   "repository": {
     "type": "git",
