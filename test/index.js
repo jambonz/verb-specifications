@@ -1,0 +1,1 @@
+require('./jambonz-verb-test');
