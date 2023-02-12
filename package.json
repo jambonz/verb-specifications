@@ -1,0 +1,27 @@
+{
+  "name": "verb-specifications",
+  "version": "0.0.1",
+  "description": "Jambonz Verb Specification Utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jambonz/verb-specifications.git"
+  },
+  "author": "Dave Horton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jambonz/verb-specifications/issues"
+  },
+  "homepage": "https://github.com/jambonz/verb-specifications#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "tape": "^5.6.1"
+  },
+  "dependencies": {
+    "pino": "^8.8.0"
+  }
+}
