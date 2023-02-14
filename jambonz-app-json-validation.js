@@ -110,4 +110,4 @@ function validateVerb(name, data, logger) {
   if (required.length > 0) throw new Error(`${name}: missing value for ${required}`);
 }
 
-module.exports = { normalizeJambones, validate };
+module.exports = { normalizeJambones, validate, validateVerb };
