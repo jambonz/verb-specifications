@@ -1,6 +1,6 @@
 const test = require('tape');
 const logger = require('pino')({level: process.env.JAMBONES_LOGLEVEL || 'error'});
-const { validate } = require('../jambonz-app-json-validation');
+const { validate } = require('..');
 
 test("validate correct verbs", async (t) => {
 
