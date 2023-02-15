@@ -231,7 +231,7 @@ test("validate correct verbs", async (t) => {
       "verb": "transcribe",
       "transcriptionHook": "http://example.com/transcribe",
       "recognizer": {
-        "vendor": "google",
+        "vendor": "nvidia",
         "language" : "en-US",
         "interim": true
       }
