@@ -1,12 +1,11 @@
 {
   "name": "@jambonz/verb-specifications",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Jambonz Verb Specification Utilities",
   "main": "index.js",
   "scripts": {
     "test": "node test/",
     "jslint": "eslint index.js"
-
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,7 @@
     "tape": "^5.6.1"
   },
   "dependencies": {
+    "debug": "^4.3.4",
     "pino": "^8.8.0"
   }
 }

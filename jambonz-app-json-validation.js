@@ -1,4 +1,5 @@
 const assert = require('assert');
+const debug = require('debug')('jambonz:app-json-validation');
 const _specData = require('./specs');
 const specs = new Map();
 for (const key in _specData) { specs.set(key, _specData[key]); }
@@ -30,7 +31,7 @@ function normalizeJambones(logger, obj) {
       throw new Error('malformed jambonz payload: missing verb property');
     }
   }
-  logger.debug({ document }, `normalizeJambones: returning document with ${document.length} tasks`);
+  debug({ document }, `normalizeJambones: returning document with ${document.length} tasks`);
   return document;
 }
 
@@ -44,7 +45,7 @@ function validate(logger, obj) {
 }
 
 function validateVerb(name, data, logger) {
-  logger.debug(`validating ${name} with data ${JSON.stringify(data)}`);
+  debug(`validating ${name} with data ${JSON.stringify(data)}`);
   // validate the instruction is supported
   if (!specs.has(name)) throw new Error(`invalid instruction: ${name}`);
 
@@ -55,7 +56,7 @@ function validateVerb(name, data, logger) {
     if (dKey in specData.properties) {
       const dVal = data[dKey];
       const dSpec = specData.properties[dKey];
-      logger.debug(`Task:validate validating property ${dKey} with value ${JSON.stringify(dVal)}`);
+      debug(`Task:validate validating property ${dKey} with value ${JSON.stringify(dVal)}`);
 
       if (typeof dSpec === 'string' && dSpec === 'array') {
         if (!Array.isArray(dVal)) throw new Error(`${name}: property ${dKey} is not an array`);
