@@ -650,7 +650,20 @@
       "endpointDetection": "boolean",
       "profanityFilter": "boolean",
       "speechContext": "string",
-      "clientRequestReference": "string"
+      "clientRequestReference": "string",
+      "storage": "#sonioxStorage"
+    },
+    "required": [
+    ]
+  },
+  "sonioxStorage": {
+    "properties": {
+      "id": "string",
+      "title": "string",
+      "disableStoreAudio": "boolean",
+      "disableStoreTranscript": "boolean",
+      "disableSearch": "boolean",
+      "metadata": "object"
     },
     "required": [
     ]
