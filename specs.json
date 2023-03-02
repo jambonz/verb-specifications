@@ -465,10 +465,7 @@
   },
   "synthesizer": {
     "properties": {
-      "vendor": {
-        "type": "string",
-        "enum": ["google", "aws", "polly", "microsoft", "nuance", "ibm", "nvidia", "default"]
-      },
+      "vendor": "string",
       "language": "string",
       "voice": "string",
       "engine": {
@@ -487,10 +484,8 @@
   "recognizer": {
     "properties": {
       "vendor": {
-        "type": "string",
-        "enum": ["google", "aws", "microsoft", "nuance", "deepgram", "ibm", "nvidia", "soniox", "default"]
-      },
-      "language": "string",
+        "vendor": "string",
+        "language": "string",
       "vad": "#vad",
       "hints": "array",
       "hintsBoost": "number",
