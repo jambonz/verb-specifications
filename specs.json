@@ -552,10 +552,20 @@
       "deepgramOptions": "#deepgramOptions",
       "ibmOptions": "#ibmOptions",
       "nvidiaOptions": "#nvidiaOptions",
-      "sonioxOptions": "#sonioxOptions"
+      "sonioxOptions": "#sonioxOptions",
+      "customOptions": "#customOptions"
     },
     "required": [
       "vendor"
+    ]
+  },
+  "customOptions": {
+    "properties": {
+      "authToken": "string",
+      "uri": "string",
+      "options": "object"
+    },
+    "required": [
     ]
   },
   "nvidiaOptions": {
