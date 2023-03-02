@@ -483,9 +483,8 @@
   },
   "recognizer": {
     "properties": {
-      "vendor": {
-        "vendor": "string",
-        "language": "string",
+      "vendor": "string",
+      "language": "string",
       "vad": "#vad",
       "hints": "array",
       "hintsBoost": "number",
