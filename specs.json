@@ -723,7 +723,7 @@
       "inlineWordset": "string",
       "builtin": "string",
       "inlineGrammar": "string",
-      "wakeupWord": ["string"],
+      "wakeupWord": "array",
       "weightName": {
         "type": "string",
         "enum": [

@@ -1,6 +1,6 @@
 {
   "name": "@jambonz/verb-specifications",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Jambonz Verb Specification Utilities",
   "main": "index.js",
   "scripts": {
