@@ -202,6 +202,7 @@
       "dtmfCapture": "object",
       "dtmfHook": "object|string",
       "headers": "object",
+      "anchorMedia": "boolean",
       "listen": "#listen",
       "target": ["#target"],
       "timeLimit": "number",
