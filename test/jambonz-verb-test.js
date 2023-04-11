@@ -46,6 +46,7 @@ test("validate correct verbs", async (t) => {
       "verb": "dial",
       "actionHook": "/outdial",
       "callerId": "+16173331212",
+      "callerName": "Tom",
       "answerOnBridge": true,
       "dtmfCapture": ["*2", "*3"],
       "dtmfHook": {
