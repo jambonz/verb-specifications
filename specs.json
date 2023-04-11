@@ -384,6 +384,7 @@
       "call_hook": "object|string",
       "call_status_hook": "object|string",
       "from": "string",
+      "callerName": "string",
       "fromHost": "string",
       "speech_synthesis_vendor": "string",
       "speech_synthesis_voice": "string",
