@@ -603,13 +603,7 @@
   "deepgramOptions": {
     "properties": {
       "apiKey": "string",
-      "tier": {
-        "type": "string",
-        "enum": [
-          "enhanced",
-          "base"
-        ]
-      },
+      "tier": "string",
       "model": "string",
       "customModel": "string",
       "version": "string",
