@@ -610,19 +610,7 @@
           "base"
         ]
       },
-      "model": {
-        "type": "string",
-        "enum": [
-          "general",
-          "meeting",
-          "phonecall",
-          "voicemail",
-          "finance",
-          "conversationalai",
-          "video",
-          "custom"
-        ]
-      },
+      "model": "string",
       "customModel": "string",
       "version": "string",
       "punctuate": "boolean",
