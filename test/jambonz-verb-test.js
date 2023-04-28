@@ -110,7 +110,10 @@ test("validate correct verbs", async (t) => {
         "vendor": "google",
         "language": "en-US",
         "hints": ["sales", "support"],
-        "hintsBoost": 10
+        "hintsBoost": 10,
+        "deepgramOptions": {
+          "endpointing": 500
+        }
       },
       "say": {
         "text": "To speak to Sales press 1 or say Sales.  To speak to customer support press 2 or say Support",
@@ -119,6 +122,25 @@ test("validate correct verbs", async (t) => {
           "language": "en-US"
         }
       }
+    },
+    {
+      "verb": "gather",
+      "actionHook": "http://example.com/collect",
+      "input": ["digits", "speech"],
+      "bargein": true,
+      "dtmfBargein": true,
+      "finishOnKey": "#",
+      "numDigits": 5,
+      "timeout": 8,
+      "recognizer": {
+        "vendor": "google",
+        "language": "en-US",
+        "hints": ["sales", "support"],
+        "hintsBoost": 10,
+        "deepgramOptions": {
+          "endpointing": true
+        }
+      },
     },
     {
       "verb": "hangup",

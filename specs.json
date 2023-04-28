@@ -627,7 +627,7 @@
       "search": "array",
       "replace": "array",
       "keywords": "array",
-      "endpointing": "boolean",
+      "endpointing": "boolean | number",
       "vadTurnoff": "number",
       "tag": "string"
     }
