@@ -394,7 +394,8 @@
       "tag": "object",
       "to": "#target",
       "headers": "object",
-      "timeout": "number"
+      "timeout": "number",
+      "amd": "#amd"
     },
     "required": [
       "call_hook",
