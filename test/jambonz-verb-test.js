@@ -273,7 +273,7 @@ test("validate correct verbs", async (t) => {
         type: "phone",
         number: "15583084809",
       },
-      metadata: {
+      tag: {
         customer: "acme",
         referenceId: "deadbeef",
       }
