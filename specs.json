@@ -394,7 +394,8 @@
       "tag": "object",
       "to": "#target",
       "headers": "object",
-      "timeout": "number"
+      "timeout": "number",
+      "metadata": "object"
     },
     "required": [
       "call_hook",

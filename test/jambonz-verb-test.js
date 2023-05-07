@@ -258,6 +258,25 @@ test("validate correct verbs", async (t) => {
         "language" : "en-US",
         "interim": true
       }
+    },
+    {
+      "verb": "rest:dial",
+      account_sid: "1291964182631236912836123912",
+      call_hook: {
+        url: "http://127.0.0.1:3100/",
+        method: "POST",
+        username: "username",
+        password: "password",
+      },
+      from: "15583084810",
+      to: {
+        type: "phone",
+        number: "15583084809",
+      },
+      metadata: {
+        customer: "acme",
+        referenceId: "deadbeef",
+      }
     }
   ];
   try {
