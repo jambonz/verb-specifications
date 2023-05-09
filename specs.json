@@ -480,7 +480,8 @@
       "gender": {
         "type": "string",
         "enum": ["MALE", "FEMALE", "NEUTRAL"]
-      }
+      },
+      "options": "object"
     },
     "required": [
       "vendor"
