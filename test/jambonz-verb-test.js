@@ -40,7 +40,8 @@ test("validate correct verbs", async (t) => {
       "verb": "dequeue",
       "name": "support",
       "beep": true,
-      "timeout": 60
+      "timeout": 60,
+      "callSid": "call_sid1234"
     },
     {
       "verb": "dial",
@@ -95,7 +96,8 @@ test("validate correct verbs", async (t) => {
       "verb": "enqueue",
       "name": "support",
       "actionHook": "/queue-action",
-      "waitHook": "/queue-wait"
+      "waitHook": "/queue-wait",
+      "priority": 50
     },
     {
       "verb": "gather",
