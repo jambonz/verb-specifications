@@ -89,7 +89,8 @@
       "name": "string",
       "actionHook": "object|string",
       "timeout": "number",
-      "beep": "boolean"
+      "beep": "boolean",
+      "callSid": "string"
     },
     "required": [
       "name"
@@ -101,6 +102,7 @@
       "name": "string",
       "actionHook": "object|string",
       "waitHook": "object|string",
+      "priority": "number",
       "_": "object"
     },
     "required": [
