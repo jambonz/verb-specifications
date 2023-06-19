@@ -37,6 +37,20 @@ test("validate correct verbs", async (t) => {
       }
     },
     {
+      "verb": "config",
+      "record": {
+      "action": "startCallRecording",
+      "siprecServerURL": ["sip:srs@recording.example.com","sip:srs@recording.example.com"]
+      }
+    },
+    {
+      "verb": "config",
+      "record": {
+      "action": "startCallRecording",
+      "siprecServerURL": "sip:srs@recording.example.com"
+      }
+    },
+    {
       "verb": "dequeue",
       "name": "support",
       "beep": true,
