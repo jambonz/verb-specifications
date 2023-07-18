@@ -269,6 +269,7 @@ test("validate correct verbs", async (t) => {
     {
       "verb": "transcribe",
       "transcriptionHook": "http://example.com/transcribe",
+      "asrTimeout": 10,
       "recognizer": {
         "vendor": "nvidia",
         "language" : "en-US",

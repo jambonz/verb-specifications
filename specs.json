@@ -420,7 +420,8 @@
       "id": "string",
       "transcriptionHook": "string",
       "recognizer": "#recognizer",
-      "earlyMedia": "boolean"
+      "earlyMedia": "boolean",
+      "asrTimeout": "number"
     },
     "required": [
       "transcriptionHook"
