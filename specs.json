@@ -364,7 +364,8 @@
         "enum": ["startCallRecording", "stopCallRecording", "pauseCallRecording", "resumeCallRecording"]
       },
       "recordingID": "string",
-      "siprecServerURL": "string|array"
+      "siprecServerURL": "string|array",
+      "headers": "object"
     },
     "required": [
       "action"
