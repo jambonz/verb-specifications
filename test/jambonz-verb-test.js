@@ -40,7 +40,11 @@ test("validate correct verbs", async (t) => {
       "verb": "config",
       "record": {
       "action": "startCallRecording",
-      "siprecServerURL": ["sip:srs@recording.example.com","sip:srs@recording.example.com"]
+      "siprecServerURL": ["sip:srs@recording.example.com","sip:srs@recording.example.com"],
+      "headers" : {
+        "X-Header1": "Value1",
+        "X-Header2": "Value2"
+      }
       }
     },
     {
