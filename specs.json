@@ -213,7 +213,8 @@
       "timeout": "number",
       "proxy": "string",
       "transcribe": "#transcribe",
-      "amd": "#amd"
+      "amd": "#amd",
+      "onHoldMusic": "string"
     },
     "required": [
       "target"
