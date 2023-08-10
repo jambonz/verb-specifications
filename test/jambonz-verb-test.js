@@ -34,7 +34,8 @@ test("validate correct verbs", async (t) => {
         "enable": true,
         "input" : ["speech"],
         "actionHook": "/userInput"
-      }
+      },
+      "onHoldMusic": "http://server.com/hold"
     },
     {
       "verb": "config",
@@ -68,7 +69,6 @@ test("validate correct verbs", async (t) => {
       "callerName": "Tom",
       "answerOnBridge": true,
       "dtmfCapture": ["*2", "*3"],
-      "onHoldMusic": "http://server.com/hold",
       "dtmfHook": {
         "url": "/dtmf",
         "method": "GET"

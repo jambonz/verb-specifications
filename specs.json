@@ -45,7 +45,8 @@
       "listen": "#listenOptions",
       "amd": "#amd",
       "notifyEvents": "boolean",
-      "reset": "string|array"
+      "reset": "string|array",
+      "onHoldMusic": "string"
     },
     "required": []
   },
@@ -213,8 +214,7 @@
       "timeout": "number",
       "proxy": "string",
       "transcribe": "#transcribe",
-      "amd": "#amd",
-      "onHoldMusic": "string"
+      "amd": "#amd"
     },
     "required": [
       "target"
