@@ -34,7 +34,8 @@ test("validate correct verbs", async (t) => {
         "enable": true,
         "input" : ["speech"],
         "actionHook": "/userInput"
-      }
+      },
+      "onHoldMusic": "http://server.com/hold"
     },
     {
       "verb": "config",

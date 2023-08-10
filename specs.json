@@ -45,7 +45,8 @@
       "listen": "#listenOptions",
       "amd": "#amd",
       "notifyEvents": "boolean",
-      "reset": "string|array"
+      "reset": "string|array",
+      "onHoldMusic": "string"
     },
     "required": []
   },
