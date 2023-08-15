@@ -24,11 +24,13 @@ test("validate correct verbs", async (t) => {
       "verb": "config",
       "synthesizer": {
         "voice": "Jenny",
-        "vendor": "google"
+        "vendor": "google",
+        "label": "label1"
       },
       "recognizer": {
         "vendor": "google",
-        "language": "de-DE"
+        "language": "de-DE",
+        "label": "label1"
       },
       "bargeIn": {
         "enable": true,
@@ -140,7 +142,8 @@ test("validate correct verbs", async (t) => {
         "text": "To speak to Sales press 1 or say Sales.  To speak to customer support press 2 or say Support",
         "synthesizer": {
           "vendor": "google",
-          "language": "en-US"
+          "language": "en-US",
+          "label": "label1"
         }
       }
     },
