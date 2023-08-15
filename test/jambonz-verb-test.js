@@ -29,7 +29,8 @@ test("validate correct verbs", async (t) => {
       },
       "recognizer": {
         "vendor": "google",
-        "language": "de-DE"
+        "language": "de-DE",
+        "label": "label1"
       },
       "bargeIn": {
         "enable": true,
