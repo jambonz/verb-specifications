@@ -67,6 +67,7 @@ test("validate correct verbs", async (t) => {
     {
       "verb": "dial",
       "actionHook": "/outdial",
+      "onHoldHook": "/onHoldHook",
       "callerId": "+16173331212",
       "callerName": "Tom",
       "answerOnBridge": true,

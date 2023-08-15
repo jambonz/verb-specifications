@@ -198,6 +198,7 @@
     "properties": {
       "id": "string",
       "actionHook": "object|string",
+      "onHoldHook": "object|string",
       "answerOnBridge": "boolean",
       "callerId": "string",
       "callerName": "string",
