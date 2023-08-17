@@ -144,7 +144,11 @@ test("validate correct verbs", async (t) => {
         "synthesizer": {
           "vendor": "google",
           "language": "en-US",
-          "label": "label1"
+          "label": "label1",
+          "fallbackVendor": "google",
+          "fallbackLanguage": "en-US",
+          "fallbackLabel": "label1",
+          "fallbackVoice": "voice"
         }
       }
     },
@@ -160,6 +164,9 @@ test("validate correct verbs", async (t) => {
       "recognizer": {
         "vendor": "google",
         "language": "en-US",
+        "fallbackVendor": "google",
+        "fallbackLanguage": "en-US",
+        "fallbackLabel": "label1",
         "hints": ["sales", "support"],
         "hintsBoost": 10,
         "deepgramOptions": {
