@@ -145,9 +145,10 @@ test("validate correct verbs", async (t) => {
           "vendor": "google",
           "language": "en-US",
           "label": "label1",
-          "fallback_vendor": "google",
-          "fallback_language": "en-US",
-          "fallback_label": "label1"
+          "fallbackVendor": "google",
+          "fallbackLanguage": "en-US",
+          "fallbackLabel": "label1",
+          "fallbackVoice": "voice"
         }
       }
     },
@@ -163,9 +164,9 @@ test("validate correct verbs", async (t) => {
       "recognizer": {
         "vendor": "google",
         "language": "en-US",
-        "fallback_vendor": "google",
-        "fallback_language": "en-US",
-        "fallback_label": "label1",
+        "fallbackVendor": "google",
+        "fallbackLanguage": "en-US",
+        "fallbackLabel": "label1",
         "hints": ["sales", "support"],
         "hintsBoost": 10,
         "deepgramOptions": {
