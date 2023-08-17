@@ -479,6 +479,10 @@
       "label": "string",
       "language": "string",
       "voice": "string",
+      "fallback_vendor": "string",
+      "fallback_label": "string",
+      "fallback_language": "string",
+      "fallback_voice": "string",
       "engine": {
         "type": "string",
         "enum": ["standard", "neural"]
@@ -498,6 +502,9 @@
       "vendor": "string",
       "label": "string",
       "language": "string",
+      "fallback_vendor": "string",
+      "fallback_label": "string",
+      "fallback_language": "string",
       "vad": "#vad",
       "hints": "array",
       "hintsBoost": "number",
