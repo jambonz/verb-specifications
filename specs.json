@@ -181,6 +181,7 @@
       "beep": "boolean",
       "startConferenceOnEnter": "boolean",
       "endConferenceOnExit": "boolean",
+      "endConferenceDuration": "number",
       "maxParticipants": "number",
       "joinMuted": "boolean",
       "actionHook": "object|string",
