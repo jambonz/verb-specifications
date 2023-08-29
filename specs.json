@@ -591,10 +591,7 @@
   },
   "cobaltOptions": {
     "properties": {
-      "uri": "string",
-      "model": "string",
-      "maxAlternatives": "number",
-      "wordTimeOffsets": "boolean"
+      "serverUri": "string"
     },
     "required": [
     ]
