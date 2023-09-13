@@ -591,7 +591,11 @@
   },
   "cobaltOptions": {
     "properties": {
-      "serverUri": "string"
+      "serverUri": "string",
+      "enableConfusionNetwork": "boolean",
+      "metadata": "string",
+      "compiledContextData": "string",
+      "wordTimeOffsets": "boolean"
     },
     "required": [
     ]
