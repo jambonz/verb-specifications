@@ -60,7 +60,12 @@
         "type": "string",
         "enum": ["mono", "stereo", "mixed"]
       },
-      "metadata": "object"
+      "metadata": "object",
+      "maxLength": "number",
+      "passDtmf": "boolean",
+      "playBeep": "boolean",
+      "disableBidirectionalAudio": "boolean",
+      "timeout": "number"
     },
     "required": [
       "enable"
