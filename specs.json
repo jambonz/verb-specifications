@@ -573,6 +573,7 @@
       "ibmOptions": "#ibmOptions",
       "nvidiaOptions": "#nvidiaOptions",
       "sonioxOptions": "#sonioxOptions",
+      "cobaltOptions": "#cobaltOptions",
       "customOptions": "#customOptions"
     },
     "required": [
@@ -584,6 +585,17 @@
       "authToken": "string",
       "uri": "string",
       "options": "object"
+    },
+    "required": [
+    ]
+  },
+  "cobaltOptions": {
+    "properties": {
+      "serverUri": "string",
+      "enableConfusionNetwork": "boolean",
+      "metadata": "string",
+      "compiledContextData": "string",
+      "wordTimeOffsets": "boolean"
     },
     "required": [
     ]
