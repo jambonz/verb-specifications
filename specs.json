@@ -573,6 +573,7 @@
       "azureSttEndpointId": "string",
       "asrDtmfTerminationDigit": "string",
       "asrTimeout": "number",
+      "fastRecognitionTimeout": "number",
       "nuanceOptions": "#nuanceOptions",
       "deepgramOptions": "#deepgramOptions",
       "ibmOptions": "#ibmOptions",

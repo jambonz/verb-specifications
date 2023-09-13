@@ -135,6 +135,7 @@ test("validate correct verbs", async (t) => {
         "language": "en-US",
         "hints": ["sales", "support"],
         "hintsBoost": 10,
+        "fastRecognitionTimeout": 2000,
         "deepgramOptions": {
           "endpointing": 500
         }
