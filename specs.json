@@ -595,7 +595,8 @@
       "enableConfusionNetwork": "boolean",
       "metadata": "string",
       "compiledContextData": "string",
-      "wordTimeOffsets": "boolean"
+      "wordTimeOffsets": "boolean",
+      "contextToken": "string"
     },
     "required": [
     ]
