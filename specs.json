@@ -407,7 +407,8 @@
       "to": "#target",
       "headers": "object",
       "timeout": "number",
-      "amd": "#amd"
+      "amd": "#amd",
+      "dual_streams" : "boolean"
     },
     "required": [
       "call_hook",

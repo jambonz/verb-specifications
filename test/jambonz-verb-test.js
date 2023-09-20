@@ -313,7 +313,8 @@ test("validate correct verbs", async (t) => {
       "amd": {
         "actionHook": "/answeringMachineDetection",
     
-      }
+      },
+      "dual_streams": true
     }
   ];
   try {
