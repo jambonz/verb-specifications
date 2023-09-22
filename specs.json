@@ -46,7 +46,8 @@
       "amd": "#amd",
       "notifyEvents": "boolean",
       "reset": "string|array",
-      "onHoldMusic": "string"
+      "onHoldMusic": "string",
+      "actionHookDelayAction": "#actionHookDelayAction"
     },
     "required": []
   },
@@ -174,7 +175,8 @@
       "timeout": "number",
       "recognizer": "#recognizer",
       "play": "#play",
-      "say": "#say"
+      "say": "#say",
+      "actionHookDelayAction": "#actionHookDelayAction"
     },
     "required": [
     ]
@@ -839,6 +841,15 @@
       "decisionTimeoutMs": "number",
       "toneTimeoutMs": "number",
       "greetingCompletionTimeoutMs": "number"
+    }
+  },
+  "actionHookDelayAction" : {
+    "properties": {
+      "enabled": "boolean",
+      "noResponseTimeout": "number",
+      "noResponseGiveUpTimeout": "number",
+      "retries": "number",
+      "actions": "array"
     }
   }
 }
