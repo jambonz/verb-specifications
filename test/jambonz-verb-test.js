@@ -197,6 +197,28 @@ test("validate correct verbs", async (t) => {
           "endpointing": true
         }
       },
+      "actionHookDelayAction": {
+        "noResponseTimeout": 5,
+        "noResponseGiveUpTimeout": 10,
+        "retries": 3,
+        "actions": [
+          {
+            "verb": "say",
+            "text": "To speak to Sales press 1 or say Sales.  To speak to customer support press 2 or say Support",
+            "synthesizer": {
+              "vendor": "google",
+              "language": "en-US"
+            }
+          },
+          {
+            "verb": "play",
+            "url": "https://example.com/example.mp3",
+            "timeoutSecs": 10,
+            "seekOffset": 8000,
+            "actionHook": "/play/action"
+          }
+        ]
+      }
     },
     {
       "verb": "hangup",
