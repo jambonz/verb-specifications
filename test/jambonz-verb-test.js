@@ -75,6 +75,10 @@ test("validate correct verbs", async (t) => {
     },
     {
       "verb": "config",
+      "sipRequestWithinDialogHook": "https://jambonz.or/sipIndialogActionHook"
+    },
+    {
+      "verb": "config",
       "record": {
       "action": "startCallRecording",
       "siprecServerURL": "sip:srs@recording.example.com"

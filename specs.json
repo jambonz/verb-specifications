@@ -47,7 +47,8 @@
       "notifyEvents": "boolean",
       "reset": "string|array",
       "onHoldMusic": "string",
-      "actionHookDelayAction": "#actionHookDelayAction"
+      "actionHookDelayAction": "#actionHookDelayAction",
+      "sipRequestWithinDialogHook": "object|string"
     },
     "required": []
   },
