@@ -75,7 +75,7 @@ test("validate correct verbs", async (t) => {
     },
     {
       "verb": "config",
-      "sipIndialogActionHook": "https://jambonz.or/sipIndialogActionHook"
+      "sipIndialogHook": "https://jambonz.or/sipIndialogActionHook"
     },
     {
       "verb": "config",

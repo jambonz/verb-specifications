@@ -48,7 +48,7 @@
       "reset": "string|array",
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
-      "sipIndialogActionHook": "object|string"
+      "sipIndialogHook": "object|string"
     },
     "required": []
   },
