@@ -649,6 +649,7 @@
       "customModel": "string",
       "version": "string",
       "punctuate": "boolean",
+      "smartFormatting": "boolean",
       "profanityFilter": "boolean",
       "redact": {
         "type": "string",
