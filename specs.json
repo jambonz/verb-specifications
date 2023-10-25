@@ -14,6 +14,7 @@
     "properties": {
       "id": "string",
       "method": "string",
+      "contentType": "string",
       "body": "string",
       "headers": "object",
       "actionHook": "object|string"
