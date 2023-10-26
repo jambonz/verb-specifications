@@ -670,6 +670,7 @@
       "replace": "array",
       "keywords": "array",
       "endpointing": "boolean | number",
+      "utteranceEndMs": "number",
       "vadTurnoff": "number",
       "tag": "string"
     }
