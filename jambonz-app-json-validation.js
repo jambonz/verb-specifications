@@ -58,7 +58,8 @@ function validateVerb(name, data, logger) {
       const dSpec = specData.properties[dKey];
       debug(`Task:validate validating property ${dKey} with value ${JSON.stringify(dVal)}`);
 
-      if (typeof dSpec === 'string' && dSpec === 'array') {
+      if (typeof dVal === 'undefined') continue;
+      else if (typeof dSpec === 'string' && dSpec === 'array') {
         if (!Array.isArray(dVal)) throw new Error(`${name}: property ${dKey} is not an array`);
       }
       else if (typeof dSpec === 'string' && dSpec.includes('|')) {
