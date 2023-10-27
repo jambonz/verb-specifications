@@ -671,6 +671,7 @@
       "keywords": "array",
       "endpointing": "boolean | number",
       "utteranceEndMs": "number",
+      "shortUtterance": "boolean",
       "vadTurnoff": "number",
       "tag": "string"
     }
