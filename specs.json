@@ -601,7 +601,11 @@
     ]
   },
   "azureOptions": {
-    "speechSegmentationSilenceTimeoutMs": "number"
+    "properties": {
+      "speechSegmentationSilenceTimeoutMs": "number"
+    },
+    "required": [
+    ]
   },
   "cobaltOptions": {
     "properties": {
