@@ -488,11 +488,11 @@
       "vendor": "string",
       "label": "string",
       "language": "string",
-      "voice": "string",
+      "voice": "string|object",
       "fallbackVendor": "string",
       "fallbackLabel": "string",
       "fallbackLanguage": "string",
-      "fallbackVoice": "string",
+      "fallbackVoice": "string|object",
       "engine": {
         "type": "string",
         "enum": ["standard", "neural"]
