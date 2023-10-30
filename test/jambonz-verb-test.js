@@ -178,6 +178,24 @@ test("validate correct verbs", async (t) => {
           "fallbackLabel": "label1",
           "fallbackVoice": "voice"
         }
+      },
+      "say": {
+        "text": "To speak to Sales press 1 or say Sales.  To speak to customer support press 2 or say Support",
+        "synthesizer": {
+          "vendor": "google",
+          "language": "en-US",
+          "voice": {
+            "reportedUsage":"REALTIME",
+            "model":"path/to/model",
+           },
+          "fallbackVendor": "google",
+          "fallbackLanguage": "en-US",
+          "fallbackLabel": "label1",
+          "fallbackVoice": {
+            "reportedUsage":"REALTIME",
+            "model":"path/to/model",
+           }
+        }
       }
     },
     {
