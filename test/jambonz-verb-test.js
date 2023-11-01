@@ -64,6 +64,17 @@ test("validate correct verbs", async (t) => {
     },
     {
       "verb": "config",
+      "recognizer": {
+        "vendor": "google",
+        "language": "de-DE",
+        "label": "label1",
+        "assemblyAiOptions": {
+          "apiKey": "apikey"
+        }
+      }
+    },
+    {
+      "verb": "config",
       "record": {
       "action": "startCallRecording",
       "siprecServerURL": ["sip:srs@recording.example.com","sip:srs@recording.example.com"],
