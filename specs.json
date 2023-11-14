@@ -411,7 +411,8 @@
       "headers": "object",
       "timeout": "number",
       "amd": "#amd",
-      "dual_streams" : "boolean"
+      "dual_streams": "boolean",
+      "sipRequestWithinDialogHook": "string"
     },
     "required": [
       "call_hook",
