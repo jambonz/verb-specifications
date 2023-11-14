@@ -460,7 +460,8 @@
       "vmail": "boolean",
       "tenant": "string",
       "trunk": "string",
-      "overrideTo": "string"
+      "overrideTo": "string",
+      "proxy": "string"
     },
     "required": [
       "type"
