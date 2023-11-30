@@ -609,6 +609,7 @@
       "accessKey": "string",
       "secretKey": "string",
       "securityToken": "string",
+      "region": "string",
       "vocabularyName": "string",
       "vocabularyFilterName": "string",
       "vocabularyFilterMethod": {
