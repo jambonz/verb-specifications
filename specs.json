@@ -586,9 +586,10 @@
       "nvidiaOptions": "#nvidiaOptions",
       "sonioxOptions": "#sonioxOptions",
       "cobaltOptions": "#cobaltOptions",
+      "awsOptions": "#awsOptions",
       "azureOptions": "#azureOptions",
-      "customOptions": "#customOptions",
-      "assemblyAiOptions": "#assemblyAiOptions"
+      "assemblyAiOptions": "#assemblyAiOptions",
+      "customOptions": "#customOptions"
     },
     "required": [
       "vendor"
@@ -599,6 +600,43 @@
       "authToken": "string",
       "uri": "string",
       "options": "object"
+    },
+    "required": [
+    ]
+  },
+  "awsOptions": {
+    "properties": {
+      "accessKey": "string",
+      "secretKey": "string",
+      "securityToken": "string",
+      "vocabularyName": "string",
+      "vocabularyFilterName": "string",
+      "vocabularyFilterMethod": {
+        "type": "string",
+        "enum": [
+          "remove",
+          "mask",
+          "tag"
+        ]
+      },
+      "languageModelName": "string",
+      "piiEntityTypes": {
+        "type": "string",
+        "enum": [
+          "ADDRESS",
+          "ALL",
+          "BANK_ACCOUNT_NUMBER",
+          "BANK_ROUTING",
+          "CREDIT_DEBIT_CVV",
+          "CREDIT_DEBIT_EXPIRY",
+          "CREDIT_DEBIT_NUMBER",
+          "EMAIL",
+          "NAME",
+          "PHONE",
+          "PIN",
+          "SSN"
+        ]
+      }
     },
     "required": [
     ]
