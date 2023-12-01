@@ -621,23 +621,8 @@
         ]
       },
       "languageModelName": "string",
-      "piiEntityTypes": {
-        "type": "string",
-        "enum": [
-          "ADDRESS",
-          "ALL",
-          "BANK_ACCOUNT_NUMBER",
-          "BANK_ROUTING",
-          "CREDIT_DEBIT_CVV",
-          "CREDIT_DEBIT_EXPIRY",
-          "CREDIT_DEBIT_NUMBER",
-          "EMAIL",
-          "NAME",
-          "PHONE",
-          "PIN",
-          "SSN"
-        ]
-      }
+      "piiEntityTypes": "array",
+      "piiIdentifyEntities": "boolean"
     },
     "required": [
     ]
