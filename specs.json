@@ -100,7 +100,8 @@
       "earlyMedia": "boolean"
     },
     "required": [
-      "enable"
+      "enable",
+      "transcriptionHook"
     ]
   },
   "dequeue": {
