@@ -37,6 +37,14 @@ test("validate correct verbs", async (t) => {
         "input" : ["speech"],
         "actionHook": "/userInput"
       },
+      "transcribe": {
+        "enable": true,
+        "transcriptionHook": "http://server.com/hook",
+        "recognizer": {
+          "vendor": "google",
+          "language": "de-DE",
+        }
+      },
       "onHoldMusic": "http://server.com/hold",
       "actionHookDelayAction": {
         "enabled": true,

@@ -43,6 +43,7 @@
       "bargeIn": "#bargeIn",
       "record": "#recordOptions",
       "listen": "#listenOptions",
+      "transcribe": "#transcribeOptions",
       "amd": "#amd",
       "notifyEvents": "boolean",
       "reset": "string|array",
@@ -86,6 +87,16 @@
       "interDigitTimeout": "number",
       "dtmfBargein": "boolean",
       "minBargeinWordCount": "number"
+    },
+    "required": [
+      "enable"
+    ]
+  },
+  "transcribeOptions": {
+    "properties": {
+      "enable": "boolean",
+      "transcriptionHook": "string",
+      "recognizer": "#recognizer"
     },
     "required": [
       "enable"
