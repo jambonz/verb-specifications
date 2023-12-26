@@ -96,12 +96,10 @@
     "properties": {
       "enable": "boolean",
       "transcriptionHook": "string",
-      "recognizer": "#recognizer",
-      "earlyMedia": "boolean"
+      "recognizer": "#recognizer"
     },
     "required": [
-      "enable",
-      "transcriptionHook"
+      "enable"
     ]
   },
   "dequeue": {
