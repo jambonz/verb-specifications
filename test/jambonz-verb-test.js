@@ -25,7 +25,8 @@ test("validate correct verbs", async (t) => {
       "synthesizer": {
         "voice": "Jenny",
         "vendor": "google",
-        "label": "label1"
+        "label": "label1",
+        "azurettSEndpointId": "string",
       },
       "recognizer": {
         "vendor": "google",

@@ -514,7 +514,8 @@
         "type": "string",
         "enum": ["MALE", "FEMALE", "NEUTRAL"]
       },
-      "options": "object"
+      "options": "object",
+      "azurettSEndpointId": "string"
     },
     "required": [
       "vendor"
