@@ -689,7 +689,8 @@
   },
   "deepgramOptions": {
     "properties": {
-      "deepgramUri": "string",
+      "deepgramSttUri": "string",
+      "deepgramSttUseTls": "boolean",
       "apiKey": "string",
       "tier": "string",
       "model": "string",
