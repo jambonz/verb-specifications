@@ -185,6 +185,7 @@
       "bargein": "boolean",
       "minBargeinWordCount": "number",
       "timeout": "number",
+      "allowMultipleResponses": "boolean",
       "recognizer": "#recognizer",
       "play": "#play",
       "say": "#say",
