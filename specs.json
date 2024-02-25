@@ -198,6 +198,8 @@
       "id": "string",
       "name": "string",
       "beep": "boolean",
+      "memberTag": "string",
+      "speakOnlyTo": "string",
       "startConferenceOnEnter": "boolean",
       "endConferenceOnExit": "boolean",
       "endConferenceDuration": "number",
