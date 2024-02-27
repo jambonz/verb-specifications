@@ -1,4 +1,11 @@
 {
+  "answer": {
+    "properties": {
+      "id": "string"
+    },
+    "required": [
+    ]
+  },
   "sip:decline": {
     "properties": {
       "id": "string",
@@ -49,9 +56,19 @@
       "reset": "string|array",
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
-      "sipRequestWithinDialogHook": "object|string"
+      "sipRequestWithinDialogHook": "object|string",
+      "ambientNoise": "#ambientNoise"
     },
     "required": []
+  },
+  "ambientNoise": {
+    "properties": {
+      "enable": "boolean",
+      "url": "string"
+    },
+    "required": [
+      "enable"
+    ]
   },
   "listenOptions": {
     "properties": {
