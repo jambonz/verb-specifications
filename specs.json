@@ -1,4 +1,11 @@
 {
+  "answer": {
+    "properties": {
+      "id": "string"
+    },
+    "required": [
+    ]
+  },
   "sip:decline": {
     "properties": {
       "id": "string",
@@ -57,7 +64,7 @@
   "ambientNoise": {
     "properties": {
       "enable": "boolean",
-      "play": "string"
+      "url": "string"
     },
     "required": [
       "enable"
