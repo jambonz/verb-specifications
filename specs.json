@@ -49,9 +49,19 @@
       "reset": "string|array",
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
-      "sipRequestWithinDialogHook": "object|string"
+      "sipRequestWithinDialogHook": "object|string",
+      "ambientNoise": "#ambientNoise"
     },
     "required": []
+  },
+  "ambientNoise": {
+    "properties": {
+      "enable": "boolean",
+      "play": "string"
+    },
+    "required": [
+      "enable"
+    ]
   },
   "listenOptions": {
     "properties": {
