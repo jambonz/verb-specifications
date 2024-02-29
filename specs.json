@@ -57,14 +57,16 @@
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
       "sipRequestWithinDialogHook": "object|string",
-      "ambientNoise": "#ambientNoise"
+      "dub": "#dub"
     },
     "required": []
   },
-  "ambientNoise": {
+  "dub": {
     "properties": {
       "enable": "boolean",
-      "url": "string"
+      "play": "string",
+      "say": "object|string",
+      "adjustVolume": "string"
     },
     "required": [
       "enable"
