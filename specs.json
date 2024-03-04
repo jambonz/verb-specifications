@@ -56,21 +56,9 @@
       "reset": "string|array",
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
-      "sipRequestWithinDialogHook": "object|string",
-      "dub": "#dub"
+      "sipRequestWithinDialogHook": "object|string"
     },
     "required": []
-  },
-  "dub": {
-    "properties": {
-      "enable": "boolean",
-      "play": "string",
-      "say": "object|string",
-      "adjustVolume": "string"
-    },
-    "required": [
-      "enable"
-    ]
   },
   "listenOptions": {
     "properties": {
@@ -119,6 +107,24 @@
     },
     "required": [
       "enable"
+    ]
+  },
+  "dub": {
+    "properties": {
+      "id": "string",
+      "action": {
+        "type": "string",
+        "enum": ["addTrack", "removeTrack", "silenceTrack", "playOnTrack", "sayOnTrack"]
+      },
+      "track": "string",
+      "play": "string",
+      "say": "string",
+      "loop": "boolean",
+      "gain": "number|string"
+    },
+    "required": [
+      "action",
+      "track"
     ]
   },
   "dequeue": {
