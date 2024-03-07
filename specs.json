@@ -52,6 +52,7 @@
       "listen": "#listenOptions",
       "transcribe": "#transcribeOptions",
       "amd": "#amd",
+      "fillerNoise": "#fillerNoise",
       "notifyEvents": "boolean",
       "reset": "string|array",
       "onHoldMusic": "string",
@@ -60,6 +61,16 @@
       "boostAudioSignal": "number|string"
     },
     "required": []
+  },
+  "fillerNoise": {
+    "properties": {
+      "enable": "boolean",
+      "url": "string",
+      "startDelaySecs": "number"
+    },
+    "required": [
+      "enable"
+    ]
   },
   "listenOptions": {
     "properties": {
@@ -214,6 +225,7 @@
       "recognizer": "#recognizer",
       "play": "#play",
       "say": "#say",
+      "fillerNoise": "#fillerNoise",
       "actionHookDelayAction": "#actionHookDelayAction"
     },
     "required": [
