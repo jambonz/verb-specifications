@@ -56,7 +56,8 @@
       "reset": "string|array",
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
-      "sipRequestWithinDialogHook": "object|string"
+      "sipRequestWithinDialogHook": "object|string",
+      "boostAudioSignal": "number|string"
     },
     "required": []
   },
@@ -263,6 +264,7 @@
       "proxy": "string",
       "transcribe": "#transcribe",
       "amd": "#amd",
+      "dub": "#dub",
       "tag": "object"
     },
     "required": [
