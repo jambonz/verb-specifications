@@ -487,7 +487,8 @@
       "id": "string",
       "transcriptionHook": "string",
       "recognizer": "#recognizer",
-      "earlyMedia": "boolean"
+      "earlyMedia": "boolean",
+      "channel": "number"
     },
     "required": [
       "transcriptionHook"
