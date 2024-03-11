@@ -130,7 +130,7 @@
       },
       "track": "string",
       "play": "string",
-      "say": "string",
+      "say": "string|object",
       "loop": "boolean",
       "gain": "number|string"
     },
