@@ -269,6 +269,7 @@
       "dtmfHook": "object|string",
       "headers": "object",
       "anchorMedia": "boolean",
+      "boostAudioSignal": "number|string",
       "listen": "#listen",
       "target": ["#target"],
       "timeLimit": "number",
