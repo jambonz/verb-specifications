@@ -277,7 +277,7 @@
       "proxy": "string",
       "transcribe": "#transcribe",
       "amd": "#amd",
-      "dub": "#dub",
+      "dub": ["#dub"],
       "tag": "object"
     },
     "required": [
