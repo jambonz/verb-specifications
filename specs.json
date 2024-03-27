@@ -87,6 +87,7 @@
       "passDtmf": "boolean",
       "playBeep": "boolean",
       "disableBidirectionalAudio": "boolean",
+      "bidirectionalAudioSampleRate": "number",
       "timeout": "number"
     },
     "required": [
@@ -363,6 +364,7 @@
       "passDtmf": "boolean",
       "playBeep": "boolean",
       "disableBidirectionalAudio": "boolean",
+      "bidirectionalAudioSampleRate": "number",
       "sampleRate": "number",
       "timeout": "number",
       "transcribe": "#transcribe",
