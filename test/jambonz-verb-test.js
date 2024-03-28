@@ -318,7 +318,11 @@ test("validate correct verbs", async (t) => {
       "verb": "listen",
       "url": "wss://myrecorder.example.com/calls",
       "mixType" : "stereo",
-      "bidirectionalAudioSampleRate": 8000
+      "bidirectionalAudio": {
+        enabled: true,
+        streaming: true,
+        sampleRate: 8000
+     }
     },
     {
       "verb": "config",
@@ -326,7 +330,11 @@ test("validate correct verbs", async (t) => {
         "enable": true,
         "url": "wss://myrecorder.example.com/calls",
         "mixType" : "stereo",
-        "bidirectionalAudioSampleRate": 8000
+        "bidirectionalAudio": {
+          enabled: true,
+          streaming: true,
+          sampleRate: 8000
+       }
       }
     },
     {
