@@ -87,6 +87,7 @@
       "passDtmf": "boolean",
       "playBeep": "boolean",
       "disableBidirectionalAudio": "boolean",
+      "bidirectionalAudio": "#bidirectionalAudio",
       "timeout": "number"
     },
     "required": [
@@ -363,6 +364,7 @@
       "passDtmf": "boolean",
       "playBeep": "boolean",
       "disableBidirectionalAudio": "boolean",
+      "bidirectionalAudio": "#bidirectionalAudio",
       "sampleRate": "number",
       "timeout": "number",
       "transcribe": "#transcribe",
@@ -958,6 +960,13 @@
       "noResponseGiveUpTimeout": "number",
       "retries": "number",
       "actions": "array"
+    }
+  },
+  "bidirectionalAudio" : {
+    "properties": {
+      "enabled": "boolean",
+      "streaming": "boolean",
+      "sampleRate": "number"
     }
   }
 }
