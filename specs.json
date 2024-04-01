@@ -646,6 +646,7 @@
       "awsOptions": "#awsOptions",
       "azureOptions": "#azureOptions",
       "assemblyAiOptions": "#assemblyAiOptions",
+      "googleOptions": "#googleOptions",
       "customOptions": "#customOptions"
     },
     "required": [
@@ -697,6 +698,17 @@
     },
     "required": [
     ]
+  },
+  "googleOptions" : {
+    "properties": {
+      "serviceVersion": {
+        "type": "string",
+        "enum": [
+          "v1",
+          "v2"
+        ]
+      }
+    }
   },
   "cobaltOptions": {
     "properties": {
