@@ -421,7 +421,8 @@ test("validate correct verbs", async (t) => {
         "interim": true,
         "googleOptions": {
           "serviceVersion": "v2",
-          "voiceActivityTimeout" : "speech_start_timeout",
+          "speechStartTimeoutMs": 500,
+          "speechEndTimeoutMs": 1000,
           "transcriptNormalization" : [
             {
               "search": "dog",
