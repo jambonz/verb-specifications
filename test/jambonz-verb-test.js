@@ -413,6 +413,27 @@ test("validate correct verbs", async (t) => {
       }
     },
     {
+      "verb": "transcribe",
+      "transcriptionHook": "http://example.com/transcribe",
+      "recognizer": {
+        "vendor": "nvidia",
+        "language" : "en-US",
+        "interim": true,
+        "googleOptions": {
+          "serviceVersion": "v2",
+          "speechStartTimeoutMs": 500,
+          "speechEndTimeoutMs": 1000,
+          "transcriptNormalization" : [
+            {
+              "search": "dog",
+              "replace": "cat",
+              "case_sensitive": true
+            }
+          ]
+        }
+      }
+    },
+    {
       "verb": "rest:dial",
       "account_sid": "1291964182631236912836123912",
       "call_hook": {
