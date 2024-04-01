@@ -420,7 +420,15 @@ test("validate correct verbs", async (t) => {
         "language" : "en-US",
         "interim": true,
         "googleOptions": {
-          "serviceVersion": "v2"
+          "serviceVersion": "v2",
+          "voiceActivityTimeout" : "speech_start_timeout",
+          "transcriptNormalization" : [
+            {
+              "search": "dog",
+              "replace": "cat",
+              "case_sensitive": true
+            }
+          ]
         }
       }
     },

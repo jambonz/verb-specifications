@@ -707,7 +707,15 @@
           "v1",
           "v2"
         ]
-      }
+      },
+      "voiceActivityTimeout": {
+        "type": "string",
+        "enum": [
+          "speech_start_timeout",
+          "speech_end_timeout"
+        ]
+      },
+      "transcriptNormalization": "array"
     }
   },
   "cobaltOptions": {
