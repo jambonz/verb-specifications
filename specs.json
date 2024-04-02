@@ -710,6 +710,7 @@
       },
       "speechStartTimeoutMs": "number",
       "speechEndTimeoutMs": "number",
+      "enableVoiceActivityEvents": "boolean",
       "transcriptNormalization": "array"
     }
   },
