@@ -708,7 +708,7 @@
           "v2"
         ]
       },
-      "recognizer_id": "string",
+      "recognizerId": "string",
       "speechStartTimeoutMs": "number",
       "speechEndTimeoutMs": "number",
       "enableVoiceActivityEvents": "boolean",
