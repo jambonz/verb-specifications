@@ -423,6 +423,7 @@ test("validate correct verbs", async (t) => {
           "serviceVersion": "v2",
           "speechStartTimeoutMs": 500,
           "speechEndTimeoutMs": 1000,
+          "enableVoiceActivityEvents": true,
           "transcriptNormalization" : [
             {
               "search": "dog",
