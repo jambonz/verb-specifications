@@ -99,6 +99,7 @@
       "enable": "boolean",
       "sticky": "boolean",
       "actionHook": "object|string",
+      "partialResultHook": "object|string",
       "input": "array",
       "finishOnKey": "string",
       "numDigits": "number",
