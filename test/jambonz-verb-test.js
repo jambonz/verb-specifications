@@ -194,7 +194,8 @@ test("validate correct verbs", async (t) => {
         "hintsBoost": 10,
         "fastRecognitionTimeout": 2000,
         "deepgramOptions": {
-          "endpointing": 500
+          "endpointing": 500,
+          "useSingleConnection": true
         }
       },
       "say": {

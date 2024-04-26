@@ -792,6 +792,7 @@
       "utteranceEndMs": "number",
       "shortUtterance": "boolean",
       "vadTurnoff": "number",
+      "useSingleConnection": "boolean",
       "tag": "string"
     }
   },
