@@ -648,7 +648,8 @@
       "azureOptions": "#azureOptions",
       "assemblyAiOptions": "#assemblyAiOptions",
       "googleOptions": "#googleOptions",
-      "customOptions": "#customOptions"
+      "customOptions": "#customOptions",
+      "verbioOptions": "#verbioOptions"
     },
     "required": [
       "vendor"
@@ -804,6 +805,21 @@
       "speechContext": "string",
       "clientRequestReference": "string",
       "storage": "#sonioxStorage"
+    },
+    "required": [
+    ]
+  },
+  "verbioOptions": {
+    "properties": {
+      "enable_formatting": "boolean",
+      "enable_diarization": "boolean",
+      "topic": "number",
+      "inline_grammar": "string",
+      "grammar_uri": "string",
+      "label": "string",
+      "recognition_timeout": "number",
+      "speech_complete_timeout": "number",
+      "speech_incomplete_timeout": "number"
     },
     "required": [
     ]

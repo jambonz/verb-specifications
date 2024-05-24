@@ -238,6 +238,31 @@ test("validate correct verbs", async (t) => {
       "numDigits": 5,
       "timeout": 8,
       "recognizer": {
+        "vendor": "verbio",
+        "language": "en-US",
+        "verbioOptions": {
+          "enable_formatting": true,
+          "enable_diarization": true,
+          "topic": 0,
+          "inline_grammar": "this is inline grammar",
+          "grammar_uri": "https://grammar_uri.com",
+          "label": "label",
+          "recognition_timeout": 500,
+          "speech_complete_timeout": 500,
+          "speech_incomplete_timeout": 500,
+        }
+      },
+    },
+    {
+      "verb": "gather",
+      "actionHook": "http://example.com/collect",
+      "input": ["digits", "speech"],
+      "bargein": true,
+      "dtmfBargein": true,
+      "finishOnKey": "#",
+      "numDigits": 5,
+      "timeout": 8,
+      "recognizer": {
         "vendor": "google",
         "language": "en-US",
         "fallbackVendor": "google",
