@@ -338,6 +338,16 @@ test("validate correct verbs", async (t) => {
       }
     },
     {
+      "verb": "config",
+      "vad": {
+        "enable": true,
+        "voiceMs": 250,
+        "silenceMs": 150,
+        "strategy": "one-shot",
+        "mode": 2
+      }
+    },
+    {
       "verb": "message",
       "to": "15083084809",
       "from": "16173334567",

@@ -58,7 +58,8 @@
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
       "sipRequestWithinDialogHook": "object|string",
-      "boostAudioSignal": "number|string"
+      "boostAudioSignal": "number|string",
+      "vad":"#vad"
     },
     "required": []
   },
@@ -946,6 +947,8 @@
     "properties": {
       "enable": "boolean",
       "voiceMs": "number",
+      "silenceMs": "number",
+      "strategy": "string",
       "mode": "number"
     },
     "required": [
