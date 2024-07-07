@@ -691,6 +691,7 @@
   "azureOptions": {
     "properties": {
       "speechSegmentationSilenceTimeoutMs": "number",
+      "postProcessing" : "string",
       "languageIdMode": {
         "type": "string",
         "enum": [
