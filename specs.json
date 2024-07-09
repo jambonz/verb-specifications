@@ -229,7 +229,8 @@
       "play": "#play",
       "say": "#say",
       "fillerNoise": "#fillerNoise",
-      "actionHookDelayAction": "#actionHookDelayAction"
+      "actionHookDelayAction": "#actionHookDelayAction",
+      "minConfidence": "number"
     },
     "required": [
     ]
