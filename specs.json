@@ -470,7 +470,8 @@
       "timeout": "number",
       "amd": "#amd",
       "dual_streams": "boolean",
-      "sipRequestWithinDialogHook": "string"
+      "sipRequestWithinDialogHook": "string",
+      "referHook": "object|string"
     },
     "required": [
       "call_hook",
@@ -639,6 +640,7 @@
       "asrDtmfTerminationDigit": "string",
       "asrTimeout": "number",
       "fastRecognitionTimeout": "number",
+      "minConfidence": "number",
       "nuanceOptions": "#nuanceOptions",
       "deepgramOptions": "#deepgramOptions",
       "ibmOptions": "#ibmOptions",
