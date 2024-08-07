@@ -662,7 +662,7 @@
     "properties": {
       "authToken": "string",
       "uri": "string",
-      "sampleRateHz": "number",
+      "sampleRate": "number",
       "options": "object"
     },
     "required": [

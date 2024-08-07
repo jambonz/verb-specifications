@@ -454,7 +454,7 @@ test("validate correct verbs", async (t) => {
         "vendor": "nvidia",
         "language" : "en-US",
         "customOptions": {
-          "sampleRateHz": 16000
+          "sampleRate": 16000
         }
       }
     },
