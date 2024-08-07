@@ -453,6 +453,17 @@ test("validate correct verbs", async (t) => {
       "recognizer": {
         "vendor": "nvidia",
         "language" : "en-US",
+        "customOptions": {
+          "sampleRateHz": 16000
+        }
+      }
+    },
+    {
+      "verb": "transcribe",
+      "transcriptionHook": "http://example.com/transcribe",
+      "recognizer": {
+        "vendor": "nvidia",
+        "language" : "en-US",
         "interim": true,
         "googleOptions": {
           "serviceVersion": "v2",
