@@ -662,6 +662,7 @@
     "properties": {
       "authToken": "string",
       "uri": "string",
+      "sampleRate": "number",
       "options": "object"
     },
     "required": [
