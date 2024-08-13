@@ -557,7 +557,7 @@
       "fallbackVoice": "string|object",
       "engine": {
         "type": "string",
-        "enum": ["standard", "neural"]
+        "enum": ["standard", "neural", "generative", "long-form"]
       },
       "gender": {
         "type": "string",
