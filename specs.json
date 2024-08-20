@@ -297,6 +297,10 @@
         "type": "string",
         "enum": ["europe-west1", "europe-west2", "australia-southeast1", "asia-northeast1"]
       },
+      "model": {
+        "type": "string",
+        "enum": ["es", "cx"]
+      },
       "lang": "string",
       "actionHook": "object|string",
       "eventHook": "object|string",
