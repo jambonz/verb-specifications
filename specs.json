@@ -310,12 +310,23 @@
       "passDtmfAsTextInput": "boolean",
       "thinkingMusic": "string",
       "tts": "#synthesizer",
-      "bargein": "boolean"
+      "bargein": "boolean",
+      "queryInput": "#queryInput"
     },
     "required": [
       "project",
       "credentials",
       "lang"
+    ]
+  },
+  "queryInput": {
+    "properties": {
+      "text": "string",
+      "intent": "string",
+      "event": "string",
+      "dtmf": "string"
+    },
+    "required": [
     ]
   },
   "dtmf": {
