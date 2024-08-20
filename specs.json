@@ -292,11 +292,9 @@
       "id": "string",
       "credentials": "object|string",
       "project": "string",
+      "agent": "string",
       "environment": "string",
-      "region": {
-        "type": "string",
-        "enum": ["europe-west1", "europe-west2", "australia-southeast1", "asia-northeast1"]
-      },
+      "region": "string",
       "model": {
         "type": "string",
         "enum": ["es", "cx"]
