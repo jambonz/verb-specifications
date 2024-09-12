@@ -410,6 +410,17 @@ test("validate correct verbs", async (t) => {
       }
     },
     {
+      "verb": "say",
+      "text": "hi there!",
+      "synthesizer": {
+        "vendor": "elevenlabs",
+        "language": "en",
+        "voice": "pNInz6obpgDQGcFmaJgB",
+        "label": "label1",
+        "model": "eleven_multilingual_v2"
+      }
+    },
+    {
       "verb": "sip:decline",
       "status": 480,
       "reason": "Gone Fishing",
