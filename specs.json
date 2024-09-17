@@ -1013,7 +1013,8 @@
       "noResponseTimeout": "number",
       "noResponseGiveUpTimeout": "number",
       "retries": "number",
-      "actions": "array"
+      "actions": "array",
+      "giveUpActions": "array"
     }
   },
   "bidirectionalAudio" : {
