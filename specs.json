@@ -59,7 +59,8 @@
       "actionHookDelayAction": "#actionHookDelayAction",
       "sipRequestWithinDialogHook": "object|string",
       "boostAudioSignal": "number|string",
-      "vad":"#vad"
+      "vad":"#vad",
+      "referHook": "object|string"
     },
     "required": []
   },

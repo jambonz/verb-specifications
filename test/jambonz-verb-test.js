@@ -83,6 +83,16 @@ test("validate correct verbs", async (t) => {
     },
     {
       "verb": "config",
+      "referHook": "https://referhook.com"
+    },
+    {
+      "verb": "config",
+      "referHook": {
+        "url": "https://referhook.com"
+      }
+    },
+    {
+      "verb": "config",
       "recognizer": {
         "vendor": "google",
         "language": "de-DE",
