@@ -666,7 +666,8 @@
       "assemblyAiOptions": "#assemblyAiOptions",
       "googleOptions": "#googleOptions",
       "customOptions": "#customOptions",
-      "verbioOptions": "#verbioOptions"
+      "verbioOptions": "#verbioOptions",
+      "speechmaticsOptions": "#speechmaticsOptions"
     },
     "required": [
       "vendor"
@@ -839,6 +840,96 @@
       "recognition_timeout": "number",
       "speech_complete_timeout": "number",
       "speech_incomplete_timeout": "number"
+    },
+    "required": [
+    ]
+  },
+  "speechmaticsOptions": {
+    "properties": {
+      "transcription_config": "#sm_transcriptionConfig",
+      "translation_config": "#sm_translationConfig",
+      "audio_events_config_config": "#sm_audioEventsConfig"
+    },
+    "required": [
+      "sm_transcription_config"
+    ]
+  },
+  "sm_transcription_config": {
+    "properties": {
+      "language": "string",
+      "additional_vocab": "array",
+      "diarization": "string",
+      "speaker_diarization_config": "#sm_speakerDiarizationConfig",
+      "enable_partials": "boolean",
+      "max_delay": "number",
+      "max_delay_mode": {
+        "type": "string",
+        "enum": [
+          "fixed",
+          "flexible"
+        ]
+      },
+      "output_locale": "string",
+      "punctuation_overrides": "#sm_puctuationOverrides",
+      "operating_point": "string",
+      "enable_entities": "boolean",
+      "audio_filtering_config": "#sm_audioFilteringConfig",
+      "transcript_filtering_config": "#sm_transcriptFilteringConfig"
+    },
+    "required": [
+    ]
+  },
+  "sm_speakerDiarizationConfig": {
+    "properties": {
+      "speaker_sensitivity": "number",
+      "max_speakers": "number"
+    },
+    "required": [
+    ]
+  },
+  "sm_puctuationOverrides": {
+    "properties": {
+      "permitted_marks": "array",
+      "sensitivity": "number"
+    },
+    "required": [
+    ]
+  },
+  "sm_audioFilteringConfig": {
+    "properties": {
+      "volume_threshold": "number"
+    },
+    "required": [
+      "volume_threshold"
+    ]
+  },
+  "sm_transcriptFilteringConfig": {
+    "properties": {
+      "remove_disfluencies": "boolean"
+    },
+    "required": [
+      "remove_disfluencies"
+    ]
+  },
+  "sm_translationConfig": {
+    "properties": {
+      "target_languages": "array",
+      "enable_partials": "boolean"
+    },
+    "required": [
+      "target_languages"
+    ]
+  },
+  "sm_audioEventsConfig": {
+    "properties": {
+      "types": {
+        "type": "array",
+        "enum": [
+          "applause",
+          "music",
+          "laughter"
+        ]
+      }
     },
     "required": [
     ]
