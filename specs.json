@@ -392,6 +392,20 @@
       "url"
     ]
   },
+  "llm": {
+    "properties": {
+      "id": "string",
+      "vendor": "string",
+      "model": "string",
+      "auth": "object",
+      "actionHook": "object|string",
+      "eventHook": "object|string"
+    },
+    "required": [
+      "vendor",
+      "model"
+    ]
+  },
   "message": {
     "properties": {
       "id": "string",
