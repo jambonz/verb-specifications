@@ -402,12 +402,13 @@
       "actionHook": "object|string",
       "eventHook": "object|string",
       "toolHook": "object|string",
-      "events": "[string]",
+      "events": "array",
       "llmOptions": "object"
     },
     "required": [
       "vendor",
       "model",
+      "auth",
       "llmOptions"
     ]
   },
