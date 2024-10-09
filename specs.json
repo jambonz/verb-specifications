@@ -303,7 +303,7 @@
       "lang": "string",
       "actionHook": "object|string",
       "eventHook": "object|string",
-      "events": "[string]",
+      "events": "array",
       "welcomeEvent": "string",
       "welcomeEventParams": "object",
       "noInputTimeout": "number",
