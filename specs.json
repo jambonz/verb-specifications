@@ -871,10 +871,10 @@
       "audio_events_config_config": "#sm_audioEventsConfig"
     },
     "required": [
-      "sm_transcription_config"
+      "transcription_config"
     ]
   },
-  "sm_transcription_config": {
+  "sm_transcriptionConfig": {
     "properties": {
       "language": "string",
       "additional_vocab": "array",
