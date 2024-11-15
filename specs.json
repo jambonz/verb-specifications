@@ -871,7 +871,6 @@
       "audio_events_config_config": "#sm_audioEventsConfig"
     },
     "required": [
-      "transcription_config"
     ]
   },
   "sm_transcriptionConfig": {
