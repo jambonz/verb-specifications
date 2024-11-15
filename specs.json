@@ -526,6 +526,7 @@
     "properties": {
       "id": "string",
       "transcriptionHook": "string",
+      "translationHook": "string",
       "recognizer": "#recognizer",
       "earlyMedia": "boolean",
       "channel": "number"
