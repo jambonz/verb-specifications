@@ -205,7 +205,8 @@
       "loop": "number|string",
       "synthesizer": "#synthesizer",
       "earlyMedia": "boolean",
-      "disableTtsCache": "boolean"
+      "disableTtsCache": "boolean",
+      "closeStreamOnEmpty": "boolean"
     },
     "required": [
     ]
