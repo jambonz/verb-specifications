@@ -60,7 +60,8 @@
       "sipRequestWithinDialogHook": "object|string",
       "boostAudioSignal": "number|string",
       "vad":"#vad",
-      "referHook": "object|string"
+      "referHook": "object|string",
+      "earlyMedia": "boolean"
     },
     "required": []
   },
@@ -200,13 +201,13 @@
     "properties": {
       "id": "string",
       "text": "string|array",
+      "stream": "boolean",
       "loop": "number|string",
       "synthesizer": "#synthesizer",
       "earlyMedia": "boolean",
       "disableTtsCache": "boolean"
     },
     "required": [
-      "text"
     ]
   },
   "gather": {
