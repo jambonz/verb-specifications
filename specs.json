@@ -48,6 +48,7 @@
       "synthesizer": "#synthesizer",
       "recognizer": "#recognizer",
       "bargeIn": "#bargeIn",
+      "ttsStream": "#ttsStream",
       "record": "#recordOptions",
       "listen": "#listenOptions",
       "transcribe": "#transcribeOptions",
@@ -92,6 +93,15 @@
       "disableBidirectionalAudio": "boolean",
       "bidirectionalAudio": "#bidirectionalAudio",
       "timeout": "number"
+    },
+    "required": [
+      "enable"
+    ]
+  },
+  "ttsStream": {
+    "properties": {
+      "enable": "boolean",
+      "synthesizer": "#synthesizer"
     },
     "required": [
       "enable"
