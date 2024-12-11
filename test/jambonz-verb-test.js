@@ -441,6 +441,12 @@ test("validate correct verbs", async (t) => {
       "actionHook": "/action"
     },
     {
+      "verb": "sip:refer",
+      "referTo": "+15083084809",
+      "referredByDisplayName": "Alice",
+      "actionHook": "/action"
+    },
+    {
       "verb": "tag",
       "data": {
         "foo": "bar",
