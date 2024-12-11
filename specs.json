@@ -34,6 +34,7 @@
       "id": "string",
       "referTo": "string",
       "referredBy": "string",
+      "referredByDisplayName": "string",
       "headers": "object",
       "actionHook": "object|string",
       "eventHook": "object|string"
