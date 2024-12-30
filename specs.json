@@ -519,7 +519,8 @@
       "amd": "#amd",
       "dual_streams": "boolean",
       "sipRequestWithinDialogHook": "string",
-      "referHook": "object|string"
+      "referHook": "object|string",
+      "timeLimit": "number"
     },
     "required": [
       "call_hook",
