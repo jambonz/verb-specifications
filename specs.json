@@ -849,7 +849,8 @@
       "utteranceEndMs": "number",
       "shortUtterance": "boolean",
       "vadTurnoff": "number",
-      "tag": "string"
+      "tag": "string",
+      "fillerWords" : "boolean"
     }
   },
   "sonioxOptions": {
