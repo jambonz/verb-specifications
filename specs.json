@@ -893,6 +893,7 @@
   "sm_transcriptionConfig": {
     "properties": {
       "language": "string",
+      "domain": "string",
       "additional_vocab": "array",
       "diarization": "string",
       "speaker_diarization_config": "#sm_speakerDiarizationConfig",
