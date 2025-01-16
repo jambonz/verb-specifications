@@ -52,6 +52,7 @@
       "ttsStream": "#ttsStream",
       "record": "#recordOptions",
       "listen": "#listenOptions",
+      "stream": "#listenOptions",
       "transcribe": "#transcribeOptions",
       "amd": "#amd",
       "fillerNoise": "#fillerNoise",
@@ -289,6 +290,7 @@
       "exitMediaPath": "boolean",
       "boostAudioSignal": "number|string",
       "listen": "#listen",
+      "stream": "#listen",
       "target": ["#target"],
       "timeLimit": "number",
       "timeout": "number",
@@ -380,6 +382,33 @@
     ]
   },
   "listen": {
+    "properties": {
+      "id": "string",
+      "actionHook": "object|string",
+      "auth": "#auth",
+      "finishOnKey": "string",
+      "maxLength": "number",
+      "metadata": "object",
+      "mixType": {
+        "type": "string",
+        "enum": ["mono", "stereo", "mixed"]
+      },
+      "passDtmf": "boolean",
+      "playBeep": "boolean",
+      "disableBidirectionalAudio": "boolean",
+      "bidirectionalAudio": "#bidirectionalAudio",
+      "sampleRate": "number",
+      "timeout": "number",
+      "transcribe": "#transcribe",
+      "url": "string",
+      "wsAuth": "#auth",
+      "earlyMedia": "boolean"
+    },
+    "required": [
+      "url"
+    ]
+  },
+  "stream": {
     "properties": {
       "id": "string",
       "actionHook": "object|string",
