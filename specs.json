@@ -782,6 +782,14 @@
           "AtStart",
           "Continuous"
         ]
+      },
+      "speechRecognitionMode": {
+        "type": "string",
+        "enum": [
+          "CONVERSATION",
+          "DICTATION",
+          "INTERACTIVE"
+        ]
       }
     },
     "required": [
