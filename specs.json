@@ -298,7 +298,8 @@
       "transcribe": "#transcribe",
       "amd": "#amd",
       "dub": ["#dub"],
-      "tag": "object"
+      "tag": "object",
+      "translate": "#translate"
     },
     "required": [
       "target"
@@ -1189,6 +1190,20 @@
       "enabled": "boolean",
       "streaming": "boolean",
       "sampleRate": "number"
+    }
+  },
+  "translate": {
+    "properties": {
+      "callerLanguage": "string",
+      "calleeLanguage": "string",
+      "gain": "#gain",
+      "llm": "#llm"
+    }
+  },
+  "gain": {
+    "properties": {
+      "naturalVoice": "string",
+      "translatedVoice": "string"
     }
   }
 }
