@@ -166,7 +166,23 @@ test("validate correct verbs", async (t) => {
           "type": "user",
           "name": "spike@sip.example.com"
         }
-      ]
+      ],
+      "translate": {
+        "callerLanguage": "en-US",
+        "calleeLanguage": "vn-VN",
+        "gain": {
+            "naturalVoice": "-10db",
+            "translatedVoice": "+2dB"
+        },
+        "llm": {
+          "model": 'openai',
+          "vendor": "openai",
+          "auth": {
+            "apiKey": "API key"
+          },
+          "llmOptions": {}
+        }
+      }
     },
     {
       "verb": "dialogflow",
