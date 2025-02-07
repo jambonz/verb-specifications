@@ -883,6 +883,7 @@
       "search": "array",
       "replace": "array",
       "keywords": "array",
+      "keyterms": "array",
       "endpointing": "boolean | number",
       "utteranceEndMs": "number",
       "shortUtterance": "boolean",
