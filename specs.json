@@ -864,6 +864,7 @@
       "version": "string",
       "punctuate": "boolean",
       "smartFormatting": "boolean",
+      "noDelay": "boolean",
       "profanityFilter": "boolean",
       "redact": {
         "type": "string",
