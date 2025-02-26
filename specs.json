@@ -80,6 +80,7 @@
   },
   "listenOptions": {
     "properties": {
+      "actionHook": "object|string",
       "enable": "boolean",
       "url": "string",
       "sampleRate": "number",
