@@ -1161,6 +1161,7 @@
     "properties": {
       "actionHook": "object|string",
       "thresholdWordCount": "number",
+      "digitCount": "number",
       "timers": "#amdTimers",
       "recognizer": "#recognizer"
     },
