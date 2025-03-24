@@ -733,7 +733,8 @@
       "googleOptions": "#googleOptions",
       "customOptions": "#customOptions",
       "verbioOptions": "#verbioOptions",
-      "speechmaticsOptions": "#speechmaticsOptions"
+      "speechmaticsOptions": "#speechmaticsOptions",
+      "openaiOptions": "#openaiOptions"
     },
     "required": [
       "vendor"
@@ -919,6 +920,42 @@
       "speech_incomplete_timeout": "number"
     },
     "required": [
+    ]
+  },
+  "openaiOptions": {
+    "properties": {
+      "apiKey": "string",
+      "model": "string",
+      "prompt": "string",
+      "language": "string",
+      "input_audio_noise_reduction": {
+        "type": "string",
+        "enum": [
+          "near_field",
+          "far_field"
+        ]
+      },
+      "turn_detection": "#turnDetection"
+    },
+    "required": [
+      "model"
+    ]
+  },
+  "turnDetection": {
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "none",
+          "server_vad"
+        ]
+      },
+      "threshold": "number",
+      "prefix_padding_ms": "number",
+      "silence_duration_ms": "number"
+    },
+    "required": [
+      "type"
     ]
   },
   "speechmaticsOptions": {
