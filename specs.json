@@ -924,6 +924,7 @@
   },
   "openaiOptions": {
     "properties": {
+      "apiKey": "string",
       "model": "string",
       "prompt": "string",
       "language": "string",
