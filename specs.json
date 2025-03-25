@@ -443,6 +443,7 @@
       "model": "string",
       "auth": "object",
       "connectOptions": "object",
+      "mcpServers": ["#mcpServer"],
       "actionHook": "object|string",
       "eventHook": "object|string",
       "toolHook": "object|string",
@@ -454,6 +455,16 @@
       "model",
       "auth",
       "llmOptions"
+    ]
+  },
+  "mcpServer": {
+    "properties": {
+      "url": "string",
+      "auth": "object",
+      "roots": ["#root"]
+    },
+    "required": [
+      "url"
     ]
   },
   "message": {
