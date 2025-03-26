@@ -927,6 +927,7 @@
       "apiKey": "string",
       "model": "string",
       "prompt": "string",
+      "promptTemplates": "#promptTemplates",
       "language": "string",
       "input_audio_noise_reduction": {
         "type": "string",
@@ -938,7 +939,14 @@
       "turn_detection": "#turnDetection"
     },
     "required": [
-      "model"
+    ]
+  },
+  "promptTemplates": {
+    "properties": {
+      "hintsTemplate": "string",
+      "conversationHistoryTemplate": "string"
+    },
+    "required": [
     ]
   },
   "turnDetection": {
