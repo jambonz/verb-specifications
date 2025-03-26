@@ -955,7 +955,17 @@
         "type": "string",
         "enum": [
           "none",
-          "server_vad"
+          "server_vad",
+          "semantic_vad"
+        ]
+      },
+      "eagerness": {
+        "type": "string",
+        "enum": [
+          "low",
+          "medium",
+          "high",
+          "auto"
         ]
       },
       "threshold": "number",
