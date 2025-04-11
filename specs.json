@@ -451,7 +451,6 @@
     },
     "required": [
       "vendor",
-      "model",
       "auth",
       "llmOptions"
     ]
