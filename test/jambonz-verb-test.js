@@ -531,13 +531,13 @@ test("validate correct verbs", async (t) => {
         "apiKey": "sk-1234567890abcdefg"
       },
       "llmOptions": {
-        firstSpeaker: 'FIRST_SPEAKER_AGENT',
+        "firstSpeaker": 'FIRST_SPEAKER_AGENT',
       },
       "mcpServer": {
-        url: 'https://mcp.example.com',
-        auth: {
-          username: 'username',
-          password: 'password'
+        "url": 'https://mcp.example.com',
+        "auth": {
+          "username": 'username',
+          "password": 'password'
         }
       }
     }
