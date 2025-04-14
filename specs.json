@@ -447,12 +447,22 @@
       "eventHook": "object|string",
       "toolHook": "object|string",
       "events": "array",
-      "llmOptions": "object"
+      "llmOptions": "object",
+      "mcpServer": "#mcpServer"
     },
     "required": [
       "vendor",
       "auth",
       "llmOptions"
+    ]
+  },
+  "mcpServer": {
+    "properties": {
+      "url": "string",
+      "auth": "object"
+    },
+    "required": [
+      "url"
     ]
   },
   "message": {

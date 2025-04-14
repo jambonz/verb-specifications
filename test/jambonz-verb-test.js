@@ -522,6 +522,24 @@ test("validate correct verbs", async (t) => {
       },
       "dual_streams": true,
       "timeLimit" : 10
+    },
+    {
+      "verb": "llm",
+      "vendor": 'ultravox',
+      "model": 'fixie-ai/ultravox',
+      "auth": {
+        "apiKey": "sk-1234567890abcdefg"
+      },
+      "llmOptions": {
+        firstSpeaker: 'FIRST_SPEAKER_AGENT',
+      },
+      "mcpServer": {
+        url: 'https://mcp.example.com',
+        auth: {
+          username: 'username',
+          password: 'password'
+        }
+      }
     }
   ];
   try {
