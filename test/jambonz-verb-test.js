@@ -533,13 +533,15 @@ test("validate correct verbs", async (t) => {
       "llmOptions": {
         "firstSpeaker": 'FIRST_SPEAKER_AGENT',
       },
-      "mcpServer": {
-        "url": 'https://mcp.example.com',
-        "auth": {
-          "username": 'username',
-          "password": 'password'
+      "mcpServers": [
+        {
+          "url": 'https://mcp.example.com',
+          "auth": {
+            "username": 'username',
+            "password": 'password'
+          }
         }
-      }
+      ]
     }
   ];
   try {

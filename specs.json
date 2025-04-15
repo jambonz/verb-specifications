@@ -448,21 +448,12 @@
       "toolHook": "object|string",
       "events": "array",
       "llmOptions": "object",
-      "mcpServer": "#mcpServer"
+      "mcpServers": "array"
     },
     "required": [
       "vendor",
       "auth",
       "llmOptions"
-    ]
-  },
-  "mcpServer": {
-    "properties": {
-      "url": "string",
-      "auth": "object"
-    },
-    "required": [
-      "url"
     ]
   },
   "message": {
