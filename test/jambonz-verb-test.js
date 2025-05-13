@@ -223,6 +223,10 @@ test("validate correct verbs", async (t) => {
       },
       "say": {
         "text": "To speak to Sales press 1 or say Sales.  To speak to customer support press 2 or say Support",
+        "instructions": "Voice: High-energy, upbeat, and encouraging, projecting enthusiasm and motivation."
+      },
+      "say": {
+        "text": "To speak to Sales press 1 or say Sales.  To speak to customer support press 2 or say Support",
         "synthesizer": {
           "vendor": "google",
           "language": "en-US",
