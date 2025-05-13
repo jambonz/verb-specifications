@@ -213,6 +213,7 @@
     "properties": {
       "id": "string",
       "text": "string|array",
+      "instructions": "string",
       "stream": "boolean",
       "loop": "number|string",
       "synthesizer": "#synthesizer",
