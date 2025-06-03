@@ -64,7 +64,8 @@
       "boostAudioSignal": "number|string",
       "vad":"#vad",
       "referHook": "object|string",
-      "earlyMedia": "boolean"
+      "earlyMedia": "boolean",
+      "autoStreamTts": "boolean"
     },
     "required": []
   },
