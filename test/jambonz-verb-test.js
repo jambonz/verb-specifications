@@ -380,6 +380,10 @@ test("validate correct verbs", async (t) => {
     },
     {
       "verb": "config",
+      "autoStreamTts": true
+    },
+    {
+      "verb": "config",
       "vad": {
         "enable": true,
         "voiceMs": 250,
