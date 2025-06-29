@@ -1137,7 +1137,11 @@
   },
   "assemblyAiOptions": {
     "properties": {
-      "apiKey": "string"
+      "apiKey": "string",
+      "format_turns": "boolean",
+      "end_of_turn_confidence_threshold": "number",
+      "min_end_of_turn_silence_when_confident": "number",
+      "max_turn_silence": "number"
     }
   },
   "resource": {
