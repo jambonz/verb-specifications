@@ -79,10 +79,10 @@ test("validate correct verbs", async (t) => {
         "assemblyAiOptions": {
           "apiKey": "apikey",
           "serviceVersion": "v3",
-          "format_turns": true,
-          "end_of_turn_confidence_threshold": 0.5,
-          "min_end_of_turn_silence_when_confident": 500,
-          "max_turn_silence": 2000
+          "formatTurns": true,
+          "endOfTurnConfidenceThreshold": 0.5,
+          "minEndOfTurnSilenceWhenConfident": 500,
+          "maxTurnSilence": 2000
         }
       }
     },
