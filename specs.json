@@ -1,4 +1,13 @@
 {
+  "alert" : {
+    "properties": {
+      "id": "string",
+      "message": "string"
+    },
+    "required": [
+      "message"
+    ]
+  },
   "answer": {
     "properties": {
       "id": "string"
