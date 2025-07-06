@@ -1233,7 +1233,7 @@
       "vendor": {
         "type": "string",
         "enum": [
-          "native",
+          "webrtc",
           "silero"
         ]
       },
