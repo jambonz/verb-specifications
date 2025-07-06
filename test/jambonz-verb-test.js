@@ -395,7 +395,7 @@ test("validate correct verbs", async (t) => {
         "silenceMs": 150,
         "strategy": "one-shot",
         "mode": 2,
-        "vendor": "native",
+        "vendor": "webrtc",
         "threshold": 0.5,
         "speechPadMs": 1000
       }
