@@ -394,7 +394,10 @@ test("validate correct verbs", async (t) => {
         "voiceMs": 250,
         "silenceMs": 150,
         "strategy": "one-shot",
-        "mode": 2
+        "mode": 2,
+        "vendor": "webrtc",
+        "threshold": 0.5,
+        "speechPadMs": 1000
       }
     },
     {

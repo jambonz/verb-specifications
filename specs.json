@@ -1229,7 +1229,16 @@
       "voiceMs": "number",
       "silenceMs": "number",
       "strategy": "string",
-      "mode": "number"
+      "mode": "number",
+      "vendor": {
+        "type": "string",
+        "enum": [
+          "webrtc",
+          "silero"
+        ]
+      },
+      "threshold": "number",
+      "speechPadMs": "number"
     },
     "required": [
       "enable"
