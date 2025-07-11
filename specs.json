@@ -914,7 +914,11 @@
       "shortUtterance": "boolean",
       "vadTurnoff": "number",
       "tag": "string",
-      "fillerWords" : "boolean"
+      "fillerWords" : "boolean",
+      "preflightThreshold": "number",
+      "eotThreshold": "number",
+      "eotTimeoutMs": "number",
+      "mipOptOut": "boolean"
     }
   },
   "sonioxOptions": {
