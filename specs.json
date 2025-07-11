@@ -310,7 +310,8 @@
       "transcribe": "#transcribe",
       "amd": "#amd",
       "dub": ["#dub"],
-      "tag": "object"
+      "tag": "object",
+      "forwardPAI": "boolean"
     },
     "required": [
       "target"
