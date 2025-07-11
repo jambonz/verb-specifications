@@ -72,6 +72,7 @@ test("validate correct verbs", async (t) => {
     },
     {
       "verb": "config",
+      "notifySttLatency": true,
       "recognizer": {
         "vendor": "google",
         "language": "de-DE",

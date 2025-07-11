@@ -66,6 +66,7 @@
       "amd": "#amd",
       "fillerNoise": "#fillerNoise",
       "notifyEvents": "boolean",
+      "notifySttLatency": "boolean",
       "reset": "string|array",
       "onHoldMusic": "string",
       "actionHookDelayAction": "#actionHookDelayAction",
