@@ -213,6 +213,10 @@ test("validate correct verbs", async (t) => {
         "deepgramOptions": {
           "endpointing": 500,
           "noDelay": true,
+          preflightThreshold: 1000,
+          eotThreshold: 500,
+          eotTimeoutMs: 5000,
+          mipOptOut: true
         }
       },
       "say": {
