@@ -1,4 +1,18 @@
 {
+  "pipeline": {
+    "properties": {
+      "id": "string",
+      "stt": "#recognizer",
+      "tts": "#synthesizer",
+      "vad": "#vad",
+      "llm": "#llm",
+      "actionHook": "object|string"
+    },
+    "required": [
+      "stt",
+      "tts"
+    ]
+  },
   "alert" : {
     "properties": {
       "id": "string",
@@ -600,7 +614,6 @@
       "channel": "number"
     },
     "required": [
-      "transcriptionHook"
     ]
   },
   "target": {
@@ -1256,7 +1269,6 @@
       "speechPadMs": "number"
     },
     "required": [
-      "enable"
     ]
   },
   "amd": {
