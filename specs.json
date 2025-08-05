@@ -6,6 +6,7 @@
       "tts": "#synthesizer",
       "vad": "#vad",
       "llm": "#llm",
+      "preflightLlm": "boolean",
       "actionHook": "object|string"
     },
     "required": [
