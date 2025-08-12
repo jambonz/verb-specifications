@@ -932,7 +932,8 @@
       "preflightThreshold": "number",
       "eotThreshold": "number",
       "eotTimeoutMs": "number",
-      "mipOptOut": "boolean"
+      "mipOptOut": "boolean",
+      "entityPrompt": "string"
     }
   },
   "sonioxOptions": {
