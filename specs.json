@@ -1,19 +1,4 @@
 {
-  "pipeline": {
-    "properties": {
-      "id": "string",
-      "stt": "#recognizer",
-      "tts": "#synthesizer",
-      "vad": "#vad",
-      "llm": "#llm",
-      "preflightLlm": "boolean",
-      "actionHook": "object|string"
-    },
-    "required": [
-      "stt",
-      "tts"
-    ]
-  },
   "alert" : {
     "properties": {
       "id": "string",
@@ -1308,5 +1293,36 @@
       "streaming": "boolean",
       "sampleRate": "number"
     }
+  },
+  "pipeline": {
+    "properties": {
+      "id": "string",
+      "stt": "#recognizer",
+      "tts": "#synthesizer",
+      "vad": "#vad",
+      "turnDetection": "#turnDetectionPipeline",
+      "llm": "#llm",
+      "preflightLlm": "boolean",
+      "actionHook": "object|string",
+      "eventHook": "object|string"
+    },
+    "required": [
+      "stt",
+      "llm",
+      "tts"
+    ]
+  },
+  "turnDetectionPipeline": {
+    "properties": {
+      "vendor": {
+        "type": "string",
+        "enum": ["krisp"]
+      },
+      "threshold": "number",
+      "preflightThreshold": "number"
+    },
+    "required": [
+      "vendor"
+    ]
   }
 }
