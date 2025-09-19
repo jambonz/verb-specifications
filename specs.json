@@ -755,7 +755,8 @@
       "customOptions": "#customOptions",
       "verbioOptions": "#verbioOptions",
       "speechmaticsOptions": "#speechmaticsOptions",
-      "openaiOptions": "#openaiOptions"
+      "openaiOptions": "#openaiOptions",
+      "houndifyOptions": "#houndifyOptions"
     },
     "required": [
       "vendor"

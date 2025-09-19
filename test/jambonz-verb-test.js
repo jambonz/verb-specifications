@@ -289,6 +289,30 @@ test("validate correct verbs", async (t) => {
       "numDigits": 5,
       "timeout": 8,
       "recognizer": {
+        "vendor": "houndify",
+        "language": "en-US",
+        "houndifyOptions": {
+          "latitude": 30.6,
+          "longitude": 30.6,
+          "city": "Huston",
+          "state": "CA",
+          "country": "US",
+          "timeZone": "GMT",
+          "domain": "Voice",
+          "audioEndpoint": "https://api.houndify.com/v1/audio",
+        }
+      },
+    },
+    {
+      "verb": "gather",
+      "actionHook": "http://example.com/collect",
+      "input": ["digits", "speech"],
+      "bargein": true,
+      "dtmfBargein": true,
+      "finishOnKey": "#",
+      "numDigits": 5,
+      "timeout": 8,
+      "recognizer": {
         "vendor": "google",
         "language": "en-US",
         "fallbackVendor": "google",
