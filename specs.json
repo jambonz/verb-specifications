@@ -833,6 +833,18 @@
       "transcriptNormalization": "array"
     }
   },
+  "houndifyOptions": {
+    "properties": {
+      "latitude": "number",
+      "longitude": "number",
+      "city": "string",
+      "state": "string",
+      "country": "string",
+      "timeZone": "string",
+      "domain": "string",
+      "audioEndpoint": "string"
+    }
+  },
   "cobaltOptions": {
     "properties": {
       "serverUri": "string",
