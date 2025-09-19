@@ -755,7 +755,8 @@
       "customOptions": "#customOptions",
       "verbioOptions": "#verbioOptions",
       "speechmaticsOptions": "#speechmaticsOptions",
-      "openaiOptions": "#openaiOptions"
+      "openaiOptions": "#openaiOptions",
+      "houndifyOptions": "#houndifyOptions"
     },
     "required": [
       "vendor"
@@ -831,6 +832,18 @@
       "speechEndTimeoutMs": "number",
       "enableVoiceActivityEvents": "boolean",
       "transcriptNormalization": "array"
+    }
+  },
+  "houndifyOptions": {
+    "properties": {
+      "latitude": "number",
+      "longitude": "number",
+      "city": "string",
+      "state": "string",
+      "country": "string",
+      "timeZone": "string",
+      "domain": "string",
+      "audioEndpoint": "string"
     }
   },
   "cobaltOptions": {
