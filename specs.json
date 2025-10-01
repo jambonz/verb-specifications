@@ -917,7 +917,8 @@
       "eotThreshold": "number",
       "eotTimeoutMs": "number",
       "mipOptOut": "boolean",
-      "entityPrompt": "string"
+      "entityPrompt": "string",
+      "eager_eot_threshold":"number"
     }
   },
   "sonioxOptions": {
