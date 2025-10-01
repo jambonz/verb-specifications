@@ -216,6 +216,7 @@ test("validate correct verbs", async (t) => {
           preflightThreshold: 1000,
           eotThreshold: 500,
           eotTimeoutMs: 5000,
+          eager_eot_threshold: 200,
           mipOptOut: true
         }
       },
