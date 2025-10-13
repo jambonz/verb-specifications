@@ -926,11 +926,11 @@
       "vadTurnoff": "number",
       "tag": "string",
       "fillerWords" : "boolean",
-      "preflightThreshold": "number",
       "eotThreshold": "number",
       "eotTimeoutMs": "number",
       "mipOptOut": "boolean",
-      "entityPrompt": "string"
+      "entityPrompt": "string",
+      "eagerEotThreshold":"number"
     }
   },
   "sonioxOptions": {
@@ -1332,7 +1332,7 @@
         "enum": ["krisp"]
       },
       "threshold": "number",
-      "preflightThreshold": "number"
+      "eagerEotThreshold": "number"
     },
     "required": [
       "vendor"
