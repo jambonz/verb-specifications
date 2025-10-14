@@ -755,7 +755,8 @@
       "customOptions": "#customOptions",
       "verbioOptions": "#verbioOptions",
       "speechmaticsOptions": "#speechmaticsOptions",
-      "openaiOptions": "#openaiOptions"
+      "openaiOptions": "#openaiOptions",
+      "houndifyOptions": "#houndifyOptions"
     },
     "required": [
       "vendor"
@@ -831,6 +832,42 @@
       "speechEndTimeoutMs": "number",
       "enableVoiceActivityEvents": "boolean",
       "transcriptNormalization": "array"
+    }
+  },
+  "houndifyOptions": {
+    "properties": {
+      "latitude": "number",
+      "longitude": "number",
+      "city": "string",
+      "state": "string",
+      "country": "string",
+      "timeZone": "string",
+      "domain": "string",
+      "audioEndpoint": "string",
+      "maxSilenceSeconds": "number",
+      "maxSilenceAfterFullQuerySeconds": "number",
+      "maxSilenceAfterPartialQuerySeconds": "number",
+      "vadSensitivity": "number",
+      "vadTimeout": "number",
+      "vadMode": "string",
+      "vadVoiceMs": "number",
+      "vadSilenceMs": "number",
+      "vadDebug": "boolean",
+      "audioFormat": "string",
+      "enableNoiseReduction": "boolean",
+      "enableProfanityFilter": "boolean",
+      "enablePunctuation": "boolean",
+      "enableCapitalization": "boolean",
+      "confidenceThreshold": "number",
+      "enableDisfluencyFilter": "boolean",
+      "maxResults": "number",
+      "enableWordTimestamps": "boolean",
+      "maxAlternatives": "number",
+      "partialTranscriptInterval": "number",
+      "sessionTimeout": "number",
+      "connectionTimeout": "number",
+      "customVocabulary": "array",
+      "languageModel": "string"
     }
   },
   "cobaltOptions": {
