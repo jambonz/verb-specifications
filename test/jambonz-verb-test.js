@@ -324,6 +324,15 @@ test("validate correct verbs", async (t) => {
           "connectionTimeout": 5000,
           "customVocabulary": ["jambonz", "telephony", "voip"],
           "languageModel": "enhanced"
+        },
+        "gladiaOptions": {
+          "post_processing": {
+            "summarization": false,
+            "summarization_config": {
+              "type": "general"
+            },
+            "chapterization": false
+          },
         }
       },
     },
