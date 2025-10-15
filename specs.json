@@ -756,7 +756,8 @@
       "verbioOptions": "#verbioOptions",
       "speechmaticsOptions": "#speechmaticsOptions",
       "openaiOptions": "#openaiOptions",
-      "houndifyOptions": "#houndifyOptions"
+      "houndifyOptions": "#houndifyOptions",
+      "gladiaOptions": "object"
     },
     "required": [
       "vendor"
