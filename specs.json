@@ -278,7 +278,8 @@
       "statusEvents": "array",
       "statusHook": "object|string",
       "enterHook": "object|string",
-      "record": "#record"
+      "record": "#record",
+      "distributeDtmf": "boolean"
     },
     "required": [
       "name"
