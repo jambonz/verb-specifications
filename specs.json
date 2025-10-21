@@ -75,7 +75,8 @@
       "vad":"#vad",
       "referHook": "object|string",
       "earlyMedia": "boolean",
-      "autoStreamTts": "boolean"
+      "autoStreamTts": "boolean",
+      "disableTtsCache": "boolean"
     },
     "required": []
   },
