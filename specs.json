@@ -802,6 +802,7 @@
     "properties": {
       "speechSegmentationSilenceTimeoutMs": "number",
       "postProcessing" : "string",
+      "audioLogging" : "boolean",
       "languageIdMode": {
         "type": "string",
         "enum": [
