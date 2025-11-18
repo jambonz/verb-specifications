@@ -759,7 +759,8 @@
       "speechmaticsOptions": "#speechmaticsOptions",
       "openaiOptions": "#openaiOptions",
       "houndifyOptions": "#houndifyOptions",
-      "gladiaOptions": "object"
+      "gladiaOptions": "object",
+      "elevenlabsOptions": "#elevenlabsOptions"
     },
     "required": [
       "vendor"
@@ -872,6 +873,23 @@
       "connectionTimeout": "number",
       "customVocabulary": "array",
       "languageModel": "string"
+    }
+  },
+  "elevenlabsOptions": {
+    "properties": {
+      "includeTimestamps": "boolean",
+      "commitStrategy": {
+        "type": "string",
+        "enum": [
+          "manual",
+          "vad"
+        ]
+      },
+      "vadSilenceThresholdSecs": "number",
+      "vadThreshold": "number",
+      "minSpeechDurationMs": "number",
+      "minSilenceDurationMs": "number",
+      "enableLogging": "boolean"
     }
   },
   "cobaltOptions": {
