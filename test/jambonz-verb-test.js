@@ -549,6 +549,24 @@ test("validate correct verbs", async (t) => {
       "recognizer": {
         "vendor": "nvidia",
         "language" : "en-US",
+        "interim": true,
+        "elevenlabsOptions": {
+          "includeTimestamps": true,
+          "commitStrategy": "vad",
+          "vadSilenceThresholdSecs": 0.8,
+          "vadThreshold": 0.5,
+          "minSpeechDurationMs": 300,
+          "minSilenceDurationMs": 500,
+          "enableLogging": false
+        }
+      }
+    },
+    {
+      "verb": "transcribe",
+      "transcriptionHook": "http://example.com/transcribe",
+      "recognizer": {
+        "vendor": "nvidia",
+        "language" : "en-US",
         "customOptions": {
           "sampleRate": 16000
         }
