@@ -841,6 +841,8 @@
   },
   "houndifyOptions": {
     "properties": {
+      "requestInfo": "object",
+      "sampleRate": "number",
       "latitude": "number",
       "longitude": "number",
       "city": "string",
