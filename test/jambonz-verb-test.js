@@ -292,6 +292,12 @@ test("validate correct verbs", async (t) => {
         "vendor": "houndify",
         "language": "en-US",
         "houndifyOptions": {
+          "requestInfo": {
+            "Latitude": 30.6,
+            "Longitude": 30.6,
+            "City": "Huston"
+          },
+          "sampleRate": 16000,
           "latitude": 30.6,
           "longitude": 30.6,
           "city": "Huston",
