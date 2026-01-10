@@ -508,6 +508,7 @@ test("validate correct verbs", async (t) => {
     {
       "verb": "say",
       "text": "hi there!",
+      "instructions": "be funny",
       "synthesizer" : {
         "vendor": "google",
         "language": "en-US",
