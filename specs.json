@@ -659,6 +659,7 @@
       "label": "string",
       "language": "string",
       "voice": "string|object",
+      "model": "string",
       "fallbackVendor": "string",
       "fallbackLabel": "string",
       "fallbackLanguage": "string",

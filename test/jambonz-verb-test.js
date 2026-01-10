@@ -506,6 +506,16 @@ test("validate correct verbs", async (t) => {
       }
     },
     {
+      "verb": "say",
+      "text": "hi there!",
+      "instructions": "be funny",
+      "synthesizer" : {
+        "vendor": "google",
+        "language": "en-US",
+        "model": "gemini-2.5-flash-tts"
+      }
+    },
+    {
       "verb": "sip:decline",
       "status": 480,
       "reason": "Gone Fishing",
