@@ -550,7 +550,8 @@
   "redirect": {
     "properties": {
       "id": "string",
-      "actionHook": "object|string"
+      "actionHook": "object|string",
+      "statusHook": "object|string"
     },
     "required": [
       "actionHook"
