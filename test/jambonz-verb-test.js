@@ -441,6 +441,7 @@ test("validate correct verbs", async (t) => {
     {
       "verb": "config",
       "listen": {
+        "actionHook": "/listen-ended",
         "enable": true,
         "url": "wss://myrecorder.example.com/calls",
         "mixType" : "stereo",
