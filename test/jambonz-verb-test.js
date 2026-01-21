@@ -644,6 +644,24 @@ test("validate correct verbs", async (t) => {
           }
         }
       ]
+    },
+    {
+      "verb": "transcribe",
+      "transcriptionHook": "http://example.com/transcribe",
+      "recognizer": {
+        "vendor": "speechmatics",
+        "language": "en",
+        "speechmaticsOptions": {
+          "transcription_config": {
+            "language": "en",
+            "enable_partials": true,
+            "max_delay": 2,
+            "conversation_config": {
+              "end_of_utterance_silence_trigger": 0.5
+            }
+          }
+        }
+      }
     }
   ];
   try {

@@ -1084,6 +1084,7 @@
       "additional_vocab": "array",
       "diarization": "string",
       "speaker_diarization_config": "#sm_speakerDiarizationConfig",
+      "conversation_config": "#sm_conversationConfig",
       "enable_partials": "boolean",
       "max_delay": "number",
       "max_delay_mode": {
@@ -1107,6 +1108,13 @@
     "properties": {
       "speaker_sensitivity": "number",
       "max_speakers": "number"
+    },
+    "required": [
+    ]
+  },
+  "sm_conversationConfig": {
+    "properties": {
+      "end_of_utterance_silence_trigger": "number"
     },
     "required": [
     ]
