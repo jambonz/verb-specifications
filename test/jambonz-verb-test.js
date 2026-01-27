@@ -471,7 +471,7 @@ test("validate correct verbs", async (t) => {
     {
       "verb": "config",
       "noiseIsolation": {
-        "enabled": true,
+        "enable": true,
         "vendor": "krisp",
         "level": 3,
         "model": "custom-model"
