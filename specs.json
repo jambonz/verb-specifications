@@ -76,7 +76,8 @@
       "referHook": "object|string",
       "earlyMedia": "boolean",
       "autoStreamTts": "boolean",
-      "disableTtsCache": "boolean"
+      "disableTtsCache": "boolean",
+      "noiseIsolation": "#noiseIsolation"
     },
     "required": []
   },
@@ -1399,5 +1400,16 @@
     "required": [
       "vendor"
     ]
+  },
+  "noiseIsolation" : {
+    "properties": {
+      "enabled": "boolean",
+      "vendor": {
+        "type": "string",
+        "enum": ["krisp"]
+      },
+      "level": "number",
+      "model": "string"
+    }
   }
 }
