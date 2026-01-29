@@ -77,7 +77,8 @@
       "earlyMedia": "boolean",
       "autoStreamTts": "boolean",
       "disableTtsCache": "boolean",
-      "noiseIsolation": "#noiseIsolation"
+      "noiseIsolation": "#noiseIsolation",
+      "turnTaking": "#turnTaking"
     },
     "required": []
   },
@@ -1409,8 +1410,7 @@
         "enum": ["krisp"]
       },
       "level": "number",
-      "model": "string",
-      "turnTaking": "#turnTaking"
+      "model": "string"
     }
   },
   "turnTaking": {
