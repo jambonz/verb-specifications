@@ -474,7 +474,12 @@ test("validate correct verbs", async (t) => {
         "enable": true,
         "vendor": "krisp",
         "level": 3,
-        "model": "custom-model"
+        "model": "custom-model",
+        "turnTaking": {
+          "enable": true,
+          "threshold": 0.5,
+          "model": "turn-taking-model"
+        }
       }
     },
     {

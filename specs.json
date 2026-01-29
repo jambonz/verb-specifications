@@ -1409,6 +1409,14 @@
         "enum": ["krisp"]
       },
       "level": "number",
+      "model": "string",
+      "turnTaking": "#turnTaking"
+    }
+  },
+  "turnTaking": {
+    "properties": {
+      "enable": "boolean",
+      "threshold": "number",
       "model": "string"
     }
   }
