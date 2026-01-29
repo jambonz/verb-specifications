@@ -76,7 +76,9 @@
       "referHook": "object|string",
       "earlyMedia": "boolean",
       "autoStreamTts": "boolean",
-      "disableTtsCache": "boolean"
+      "disableTtsCache": "boolean",
+      "noiseIsolation": "#noiseIsolation",
+      "turnTaking": "#turnTaking"
     },
     "required": []
   },
@@ -1399,5 +1401,23 @@
     "required": [
       "vendor"
     ]
+  },
+  "noiseIsolation" : {
+    "properties": {
+      "enable": "boolean",
+      "vendor": {
+        "type": "string",
+        "enum": ["krisp"]
+      },
+      "level": "number",
+      "model": "string"
+    }
+  },
+  "turnTaking": {
+    "properties": {
+      "enable": "boolean",
+      "threshold": "number",
+      "model": "string"
+    }
   }
 }
