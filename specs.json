@@ -280,6 +280,7 @@
       "statusHook": "object|string",
       "enterHook": "object|string",
       "record": "#record",
+      "listen": "#listen",
       "distributeDtmf": "boolean"
     },
     "required": [
