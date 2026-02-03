@@ -469,6 +469,24 @@ test("validate correct verbs", async (t) => {
       }
     },
     {
+      "verb": "config",
+      "noiseIsolation": {
+        "enable": true,
+        "vendor": "krisp",
+        "level": 3,
+        "model": "custom-model"
+      }
+    },
+    {
+      "verb": "config",
+      "turnTaking": {
+        "enable": true,
+        "vendor": "krisp",
+        "threshold": 0.5,
+        "model": "turn-taking-model"
+      }
+    },
+    {
       "verb": "message",
       "to": "15083084809",
       "from": "16173334567",
