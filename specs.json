@@ -1405,10 +1405,7 @@
   "noiseIsolation" : {
     "properties": {
       "enable": "boolean",
-      "vendor": {
-        "type": "string",
-        "enum": ["krisp"]
-      },
+      "vendor": "string",
       "level": "number",
       "model": "string"
     }
