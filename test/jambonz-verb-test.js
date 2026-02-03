@@ -481,6 +481,7 @@ test("validate correct verbs", async (t) => {
       "verb": "config",
       "turnTaking": {
         "enable": true,
+        "vendor": "krisp",
         "threshold": 0.5,
         "model": "turn-taking-model"
       }
