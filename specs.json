@@ -883,7 +883,8 @@
       "sessionTimeout": "number",
       "connectionTimeout": "number",
       "customVocabulary": "array",
-      "languageModel": "string"
+      "languageModel": "string",
+      "audioQueryAbsoluteTimeout": "number"
     }
   },
   "elevenlabsOptions": {

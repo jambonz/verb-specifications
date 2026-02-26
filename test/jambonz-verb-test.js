@@ -329,7 +329,8 @@ test("validate correct verbs", async (t) => {
           "sessionTimeout": 30000,
           "connectionTimeout": 5000,
           "customVocabulary": ["jambonz", "telephony", "voip"],
-          "languageModel": "enhanced"
+          "languageModel": "enhanced",
+          "audioQueryAbsoluteTimeout": 5
         },
         "gladiaOptions": {
           "post_processing": {
