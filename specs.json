@@ -1383,7 +1383,8 @@
       "llm": "#llm",
       "preflightLlm": "boolean",
       "actionHook": "object|string",
-      "eventHook": "object|string"
+      "eventHook": "object|string",
+      "toolHook": "object|string"
     },
     "required": [
       "stt",

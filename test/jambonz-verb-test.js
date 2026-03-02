@@ -665,6 +665,26 @@ test("validate correct verbs", async (t) => {
       ]
     },
     {
+      "verb": "pipeline",
+      "stt": {
+        "vendor": "google",
+        "language": "en-US"
+      },
+      "tts": {
+        "vendor": "google",
+        "language": "en-US"
+      },
+      "llm": {
+        "vendor": "openai",
+        "llmOptions": {
+          "model": "gpt-4o"
+        }
+      },
+      "actionHook": "/pipeline/action",
+      "eventHook": "/pipeline/event",
+      "toolHook": "/pipeline/tool"
+    },
+    {
       "verb": "transcribe",
       "transcriptionHook": "http://example.com/transcribe",
       "recognizer": {
