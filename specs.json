@@ -332,7 +332,7 @@
       "region": "string",
       "model": {
         "type": "string",
-        "enum": ["es", "cx"]
+        "enum": ["es", "cx", "ces"]
       },
       "lang": "string",
       "actionHook": "object|string",
