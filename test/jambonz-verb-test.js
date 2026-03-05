@@ -1,6 +1,6 @@
 const test = require('tape');
 const logger = require('pino')({level: process.env.JAMBONES_LOGLEVEL || 'error'});
-const { validate } = require('..');
+const { validate, normalizeJambones } = require('..');
 
 test("validate correct verbs", async (t) => {
 
@@ -665,6 +665,36 @@ test("validate correct verbs", async (t) => {
       ]
     },
     {
+      "verb": "s2s",
+      "vendor": "openai",
+      "llmOptions": {
+        "model": "gpt-4o-realtime"
+      }
+    },
+    {
+      "verb": "openai_s2s",
+      "llmOptions": {
+        "model": "gpt-4o-realtime"
+      }
+    },
+    {
+      "verb": "google_s2s",
+      "llmOptions": {
+        "model": "gemini-2.0-flash"
+      }
+    },
+    {
+      "verb": "elevenlabs_s2s",
+      "llmOptions": {
+        "agentId": "agent-123"
+      }
+    },
+    {
+      "verb": "stream",
+      "url": "wss://myrecorder.example.com/calls",
+      "mixType": "stereo"
+    },
+    {
       "verb": "pipeline",
       "stt": {
         "vendor": "google",
@@ -728,6 +758,110 @@ test('invalid test', async (t) => {
   } catch(err) {
     t.ok(1 == 1,'successfully validate verbs');
   }
-  
+
   t.end();
-})
+});
+
+test('verb synonyms: stream is synonym for listen', async (t) => {
+  // "verb" format
+  const result1 = normalizeJambones(logger, [
+    {"verb": "stream", "url": "wss://example.com/calls", "mixType": "stereo"}
+  ]);
+  t.equal(Object.keys(result1[0])[0], 'listen', 'stream verb is rewritten to listen');
+  t.equal(result1[0].listen.url, 'wss://example.com/calls', 'data is preserved');
+
+  // object-key format
+  const result2 = normalizeJambones(logger, [
+    {"stream": {"url": "wss://example.com/calls"}}
+  ]);
+  t.equal(Object.keys(result2[0])[0], 'listen', 'stream key is rewritten to listen');
+
+  // validate passes
+  try {
+    validate(logger, [{"verb": "stream", "url": "wss://example.com/calls"}]);
+    t.pass('stream verb validates successfully');
+  } catch (err) {
+    t.fail('stream verb should validate: ' + err);
+  }
+  t.end();
+});
+
+test('verb synonyms: s2s is synonym for llm', async (t) => {
+  const result = normalizeJambones(logger, [
+    {"verb": "s2s", "vendor": "openai", "llmOptions": {"model": "gpt-4o"}}
+  ]);
+  t.equal(Object.keys(result[0])[0], 'llm', 's2s verb is rewritten to llm');
+  t.equal(result[0].llm.vendor, 'openai', 'vendor is preserved');
+  t.equal(result[0].llm.llmOptions.model, 'gpt-4o', 'llmOptions preserved');
+
+  try {
+    validate(logger, [{"verb": "s2s", "vendor": "openai", "llmOptions": {"model": "gpt-4o"}}]);
+    t.pass('s2s verb validates successfully');
+  } catch (err) {
+    t.fail('s2s verb should validate: ' + err);
+  }
+  t.end();
+});
+
+test('vendor shortcuts: openai_s2s injects vendor', async (t) => {
+  const result = normalizeJambones(logger, [
+    {"verb": "openai_s2s", "llmOptions": {"model": "gpt-4o-realtime"}}
+  ]);
+  t.equal(Object.keys(result[0])[0], 'llm', 'openai_s2s is rewritten to llm');
+  t.equal(result[0].llm.vendor, 'openai', 'vendor is injected');
+  t.equal(result[0].llm.llmOptions.model, 'gpt-4o-realtime', 'llmOptions preserved');
+
+  try {
+    validate(logger, [{"verb": "openai_s2s", "llmOptions": {"model": "gpt-4o-realtime"}}]);
+    t.pass('openai_s2s validates successfully');
+  } catch (err) {
+    t.fail('openai_s2s should validate: ' + err);
+  }
+  t.end();
+});
+
+test('vendor shortcuts: all vendors work', async (t) => {
+  const vendors = [
+    'openai', 'microsoft', 'google', 'elevenlabs', 'deepgram', 'voiceagent', 'ultravox'
+  ];
+  for (const vendor of vendors) {
+    const verbName = `${vendor}_s2s`;
+    const result = normalizeJambones(logger, [
+      {"verb": verbName, "llmOptions": {}}
+    ]);
+    t.equal(Object.keys(result[0])[0], 'llm', `${verbName} rewrites to llm`);
+    t.equal(result[0].llm.vendor, vendor, `${verbName} injects vendor=${vendor}`);
+  }
+  t.end();
+});
+
+test('vendor shortcuts: object-key format works', async (t) => {
+  const result = normalizeJambones(logger, [
+    {"google_s2s": {"llmOptions": {"model": "gemini-2.0-flash"}}}
+  ]);
+  t.equal(Object.keys(result[0])[0], 'llm', 'google_s2s key is rewritten to llm');
+  t.equal(result[0].llm.vendor, 'google', 'vendor is injected');
+  t.equal(result[0].llm.llmOptions.model, 'gemini-2.0-flash', 'llmOptions preserved');
+  t.end();
+});
+
+test('vendor shortcuts: explicit vendor in data overrides injected vendor', async (t) => {
+  const result = normalizeJambones(logger, [
+    {"verb": "openai_s2s", "vendor": "custom", "llmOptions": {}}
+  ]);
+  t.equal(result[0].llm.vendor, 'custom', 'explicit vendor takes precedence');
+  t.end();
+});
+
+test('non-synonym verbs are unchanged', async (t) => {
+  const result = normalizeJambones(logger, [
+    {"verb": "say", "text": "hello"}
+  ]);
+  t.equal(Object.keys(result[0])[0], 'say', 'say verb is not transformed');
+
+  const result2 = normalizeJambones(logger, [
+    {"llm": {"vendor": "openai", "llmOptions": {}}}
+  ]);
+  t.equal(Object.keys(result2[0])[0], 'llm', 'llm verb is not transformed');
+  t.end();
+});
