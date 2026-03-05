@@ -427,33 +427,6 @@
       "url"
     ]
   },
-  "stream": {
-    "properties": {
-      "id": "string",
-      "actionHook": "object|string",
-      "auth": "#auth",
-      "finishOnKey": "string",
-      "maxLength": "number",
-      "metadata": "object",
-      "mixType": {
-        "type": "string",
-        "enum": ["mono", "stereo", "mixed"]
-      },
-      "passDtmf": "boolean",
-      "playBeep": "boolean",
-      "disableBidirectionalAudio": "boolean",
-      "bidirectionalAudio": "#bidirectionalAudio",
-      "sampleRate": "number",
-      "timeout": "number",
-      "transcribe": "#transcribe",
-      "url": "string",
-      "wsAuth": "#auth",
-      "earlyMedia": "boolean"
-    },
-    "required": [
-      "url"
-    ]
-  },
   "llm": {
     "properties": {
       "id": "string",
