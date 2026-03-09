@@ -184,6 +184,19 @@ test("validate correct verbs", async (t) => {
       "actionHook": "/dialogflow-action"
     },
     {
+      "verb": "dialogflow",
+      "model": "ces",
+      "project": "my-ces-project",
+      "agent": "c22738db-87ac-432a-91ea-6d1fb98cbaad",
+      "region": "us",
+      "deployment": "my-deployment",
+      "lang": "en-US",
+      "credentials": "{\"type\": \"service_account\",\"project_id\": \"prj..",
+      "prompt": "hello",
+      "eventHook": "/dialogflow-event",
+      "actionHook": "/dialogflow-action"
+    },
+    {
       "verb": "dtmf",
       "dtmf": "0276",
       "duration": 250
