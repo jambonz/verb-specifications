@@ -347,7 +347,7 @@
       "thinkingMusic": "string",
       "tts": "#synthesizer",
       "bargein": "boolean",
-      "prompt": "string",
+      "welcome": "string",
       "queryInput": "#queryInput"
     },
     "required": [

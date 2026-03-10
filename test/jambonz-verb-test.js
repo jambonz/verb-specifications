@@ -192,7 +192,7 @@ test("validate correct verbs", async (t) => {
       "deployment": "my-deployment",
       "lang": "en-US",
       "credentials": "{\"type\": \"service_account\",\"project_id\": \"prj..",
-      "prompt": "hello",
+      "welcome": "hello",
       "eventHook": "/dialogflow-event",
       "actionHook": "/dialogflow-action"
     },
