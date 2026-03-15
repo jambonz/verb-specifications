@@ -1211,10 +1211,17 @@
           "v3"
         ]
       },
+      "speechModel": "string",
       "formatTurns": "boolean",
       "endOfTurnConfidenceThreshold": "number",
       "minEndOfTurnSilenceWhenConfident": "number",
-      "maxTurnSilence": "number"
+      "maxTurnSilence": "number",
+      "minTurnSilence": "number",
+      "keyterms": "array",
+      "prompt": "string",
+      "languageDetection": "boolean",
+      "vadThreshold": "number",
+      "inactivityTimeout": "number"
     }
   },
   "resource": {
