@@ -329,6 +329,7 @@
       "project": "string",
       "agent": "string",
       "environment": "string",
+      "deployment": "string",
       "region": "string",
       "model": {
         "type": "string",
@@ -346,6 +347,7 @@
       "thinkingMusic": "string",
       "tts": "#synthesizer",
       "bargein": "boolean",
+      "welcome": "string",
       "queryInput": "#queryInput"
     },
     "required": [
