@@ -663,6 +663,7 @@
       "fallbackLabel": "string",
       "fallbackLanguage": "string",
       "vad": "#vad",
+      "autogeneratePrompt": "boolean",
       "hints": "array",
       "hintsBoost": "number",
       "altLanguages": "array",
