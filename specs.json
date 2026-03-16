@@ -1392,9 +1392,7 @@
       "enabled": "boolean",
       "vendor": "string",
       "model": "string",
-      "auth": "object",
-      "systemPrompt": "string",
-      "waitTokens": "object"
+      "auth": "object"
     },
     "required": [
       "enabled"
