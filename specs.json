@@ -663,6 +663,7 @@
       "fallbackLabel": "string",
       "fallbackLanguage": "string",
       "vad": "#vad",
+      "autogeneratePrompt": "boolean",
       "hints": "array",
       "hintsBoost": "number",
       "altLanguages": "array",
@@ -1211,10 +1212,17 @@
           "v3"
         ]
       },
+      "speechModel": "string",
       "formatTurns": "boolean",
       "endOfTurnConfidenceThreshold": "number",
       "minEndOfTurnSilenceWhenConfident": "number",
-      "maxTurnSilence": "number"
+      "maxTurnSilence": "number",
+      "minTurnSilence": "number",
+      "keyterms": "array",
+      "prompt": "string",
+      "languageDetection": "boolean",
+      "vadThreshold": "number",
+      "inactivityTimeout": "number"
     }
   },
   "resource": {
