@@ -1353,6 +1353,7 @@
       "tts": "#synthesizer",
       "vad": "#vad",
       "turnDetection": "#turnDetectionPipeline",
+      "turnGate": "#turnGatePipeline",
       "llm": "#llm",
       "preflightLlm": "boolean",
       "actionHook": "object|string",
@@ -1376,6 +1377,19 @@
     },
     "required": [
       "vendor"
+    ]
+  },
+  "turnGatePipeline": {
+    "properties": {
+      "enabled": "boolean",
+      "vendor": "string",
+      "model": "string",
+      "auth": "object",
+      "systemPrompt": "string",
+      "waitTokens": "object"
+    },
+    "required": [
+      "enabled"
     ]
   },
   "noiseIsolation" : {
