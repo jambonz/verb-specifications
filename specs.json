@@ -1364,7 +1364,9 @@
       "bargeIn": "#bargeInPipeline",
       "actionHook": "object|string",
       "eventHook": "object|string",
-      "toolHook": "object|string"
+      "toolHook": "object|string",
+      "greeting": "boolean",
+      "earlyGeneration": "boolean"
     },
     "required": [
       "llm"
