@@ -665,6 +665,7 @@
       "fallbackLabel": "string",
       "fallbackLanguage": "string",
       "vad": "#vad",
+      "autogeneratePrompt": "boolean",
       "hints": "array",
       "hintsBoost": "number",
       "altLanguages": "array",
@@ -1213,10 +1214,17 @@
           "v3"
         ]
       },
+      "speechModel": "string",
       "formatTurns": "boolean",
       "endOfTurnConfidenceThreshold": "number",
       "minEndOfTurnSilenceWhenConfident": "number",
-      "maxTurnSilence": "number"
+      "maxTurnSilence": "number",
+      "minTurnSilence": "number",
+      "keyterms": "array",
+      "prompt": "string",
+      "languageDetection": "boolean",
+      "vadThreshold": "number",
+      "inactivityTimeout": "number"
     }
   },
   "resource": {
@@ -1353,32 +1361,25 @@
       "id": "string",
       "stt": "#recognizer",
       "tts": "#synthesizer",
-      "vad": "#vad",
-      "turnDetection": "#turnDetectionPipeline",
       "llm": "#llm",
-      "preflightLlm": "boolean",
+      "turnDetection": "string|object",
+      "bargeIn": "#bargeInPipeline",
       "actionHook": "object|string",
       "eventHook": "object|string",
-      "toolHook": "object|string"
+      "toolHook": "object|string",
+      "greeting": "boolean",
+      "earlyGeneration": "boolean"
     },
     "required": [
-      "stt",
-      "llm",
-      "tts"
+      "llm"
     ]
   },
-  "turnDetectionPipeline": {
+  "bargeInPipeline": {
     "properties": {
-      "vendor": {
-        "type": "string",
-        "enum": ["krisp"]
-      },
-      "threshold": "number",
-      "eagerEotThreshold": "number"
-    },
-    "required": [
-      "vendor"
-    ]
+      "enable": "boolean",
+      "minSpeechDuration": "number",
+      "sticky": "boolean"
+    }
   },
   "noiseIsolation" : {
     "properties": {
