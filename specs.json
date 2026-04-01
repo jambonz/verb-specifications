@@ -1367,7 +1367,8 @@
       "eventHook": "object|string",
       "toolHook": "object|string",
       "greeting": "boolean",
-      "earlyGeneration": "boolean"
+      "earlyGeneration": "boolean",
+      "noiseIsolation": "string|#noiseIsolationPipeline"
     },
     "required": [
       "llm"
@@ -1378,6 +1379,16 @@
       "enable": "boolean",
       "minSpeechDuration": "number",
       "sticky": "boolean"
+    }
+  },
+  "noiseIsolationPipeline": {
+    "properties": {
+      "mode": "string",
+      "level": "number",
+      "direction": {
+        "enum": ["read", "write"]
+      },
+      "model": "string"
     }
   },
   "noiseIsolation" : {
