@@ -1368,7 +1368,8 @@
       "toolHook": "object|string",
       "greeting": "boolean",
       "earlyGeneration": "boolean",
-      "noiseIsolation": "string|#noiseIsolationPipeline"
+      "noiseIsolation": "string|#noiseIsolationPipeline",
+      "mcpServers": ["#mcpServer"]
     },
     "required": [
       "llm"
