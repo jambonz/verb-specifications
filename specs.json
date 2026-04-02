@@ -1050,6 +1050,16 @@
   },
   "speechmaticsOptions": {
     "properties": {
+      "host": "string",
+      "profile": {
+        "type": "string",
+        "enum": [
+          "adaptive",
+          "agile",
+          "smart",
+          "external"
+        ]
+      },
       "transcription_config": "#sm_transcriptionConfig",
       "translation_config": "#sm_translationConfig",
       "audio_events_config_config": "#sm_audioEventsConfig"
