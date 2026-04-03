@@ -1379,7 +1379,8 @@
       "greeting": "boolean",
       "earlyGeneration": "boolean",
       "noiseIsolation": "string|#noiseIsolationPipeline",
-      "mcpServers": ["#mcpServer"]
+      "mcpServers": ["#mcpServer"],
+      "noResponseTimeout": "number"
     },
     "required": [
       "llm"
