@@ -216,7 +216,9 @@ test("validate correct verbs", async (t) => {
           "eotThreshold": 500,
           "eotTimeoutMs": 5000,
           "eagerEotThreshold": 200,
-          "mipOptOut": true
+          "mipOptOut": true,
+          "keyterms": ["hello", "world"],
+          "languageHints": ["en", "es", "fr"]
         }
       },
       "say": {
