@@ -611,6 +611,7 @@ test("validate correct verbs", async (t) => {
           "speechStartTimeoutMs": 500,
           "speechEndTimeoutMs": 1000,
           "enableVoiceActivityEvents": true,
+          "parentPath": "projects/my-project/locations/global/agent/sessions/1234567890",
           "transcriptNormalization" : [
             {
               "search": "dog",

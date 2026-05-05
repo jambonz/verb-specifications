@@ -820,7 +820,8 @@
       "speechStartTimeoutMs": "number",
       "speechEndTimeoutMs": "number",
       "enableVoiceActivityEvents": "boolean",
-      "transcriptNormalization": "array"
+      "transcriptNormalization": "array",
+      "parentPath": "string"
     }
   },
   "houndifyOptions": {
