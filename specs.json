@@ -440,7 +440,10 @@
       "eventHook": "object|string",
       "toolHook": "object|string",
       "events": "array",
-      "llmOptions": "object"
+      "llmOptions": "object",
+      "responseTimeoutMs": "number",
+      "cancelOnResponseTimeout": "boolean",
+      "cancelOnBargeIn": "boolean"
     },
     "required": [
       "vendor",
