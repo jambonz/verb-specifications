@@ -868,3 +868,30 @@ test('non-synonym verbs are unchanged', async (t) => {
   t.equal(Object.keys(result2[0])[0], 'llm', 'llm verb is not transformed');
   t.end();
 });
+
+test('dial: srtpEncryption sdes/dtls validate; invalid value rejected', async (t) => {
+  for (const mode of ['sdes', 'dtls']) {
+    try {
+      validate(logger, [{
+        "verb": "dial",
+        "target": [{"type": "sip", "sipUri": "sips:alice@example.com;transport=tls"}],
+        "srtpEncryption": mode
+      }]);
+      t.pass(`dial with srtpEncryption=${mode} validates`);
+    } catch (err) {
+      t.fail(`dial srtpEncryption=${mode} should validate: ${err}`);
+    }
+  }
+
+  try {
+    validate(logger, [{
+      "verb": "dial",
+      "target": [{"type": "sip", "sipUri": "sips:alice@example.com"}],
+      "srtpEncryption": "aes"
+    }]);
+    t.fail('dial with invalid srtpEncryption should not validate');
+  } catch (err) {
+    t.ok(/must be one of/.test(err.message), 'invalid srtpEncryption value rejected');
+  }
+  t.end();
+});

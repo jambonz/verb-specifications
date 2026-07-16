@@ -317,7 +317,11 @@
       "amd": "#amd",
       "dub": ["#dub"],
       "tag": "object",
-      "forwardPAI": "boolean"
+      "forwardPAI": "boolean",
+      "srtpEncryption": {
+        "type": "string",
+        "enum": ["sdes", "dtls"]
+      }
     },
     "required": [
       "target"
